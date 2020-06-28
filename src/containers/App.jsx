@@ -22,7 +22,7 @@ import postman from '../assets/static/diploma-postman-1.png';
 import java from '../assets/static/diploma-java-avanzado-1.png';
 import comunicacion from '../assets/static/diploma-comunicacion-equipos-1.png';
 import mysql from '../assets/static/diploma-sql-mysql-1.png';
-import useInitialState from '../hooks/useInitialState'
+import useInitialState from '../hooks/useInitialState';
 import '../assets/styles/App.scss';
 
 const API = 'urlAPI'
@@ -44,7 +44,7 @@ class App extends Component {
   };
 
   render() {
-    const initialState = useInitialState(API);
+
     let backdrop;
 
     if (this.state.sideDrawerOpen) {
