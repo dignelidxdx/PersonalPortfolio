@@ -1,0 +1,61 @@
+  
+@import "../Vars.scss";
+@import "../Media.scss";
+
+.Education {
+    margin: 5%;
+}
+.Education-ability {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+}
+.Education-container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Education-title-detail {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.Education-title {
+    margin: 5%;
+}
+.Education-description_mini {
+    margin: 5%;
+    margin-top: 10px;
+}
+.Education-description {
+    text-align: center;
+}
+.Education-description a {
+    background-color: $background-color;
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    color: $secundary-color;
+}
+
+@media only screen and (max-width: 768px) {
+    .Education-container {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .Education-title {
+        margin: 0%;
+    }
+    .Education-description_mini {
+        margin: 0%;
+        margin-top: 5px;
+    }
+    .Education-description {
+        text-align: start;;
+    }
+
+}

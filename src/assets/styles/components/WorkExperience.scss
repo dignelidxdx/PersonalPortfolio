@@ -1,0 +1,42 @@
+.Workexperience-title {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+
+}
+.Workexperiente {
+    margin: 5%;
+}
+
+.Profesional-container {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+.habilidades {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.project {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .Profesional-container {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+	
+}
+@media only screen and (max-width: 425px) {
+
+    .Profesional-container {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+	
+}

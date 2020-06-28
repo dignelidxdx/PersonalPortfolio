@@ -1,0 +1,22 @@
+@import "../Vars.scss";
+
+.GeneratePDF {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.GeneratePDF h6 {
+    font-size: 18px;
+}
+.GeneratePDF a {
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    background-color: $background-color;
+    color: white;
+    text-decoration: none;
+}
+.GeneratePDF a:hover {
+    background-color: $secundary-color;
+    color: $background-color;
+}

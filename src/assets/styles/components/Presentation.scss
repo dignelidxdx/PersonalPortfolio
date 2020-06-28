@@ -1,0 +1,70 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+
+.Presentation-ability {
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+}
+.Presentation-container {
+    box-sizing: border-box;
+    flex: 1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.Presentation-text {
+    box-sizing: border-box;
+    padding: 40px 50px;
+    text-align: center;
+}
+.Presentation-text h3 {
+    font-size: 1.4rem;
+}
+strong {
+    color: $purple-color;
+}
+.Presentation-hero {
+    box-sizing: border-box;
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Presentation_hero-img {
+    box-sizing: border-box;
+    object-fit: cover;
+    padding: 30px;
+}
+.Presentation_hero-img img {
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+
+
+  @media only screen and (max-width: 768px) {
+
+    .Presentation-hero {
+        height: 100%;
+        width: 100%;
+    }
+	.Presentation-container {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+    .Presentation-text h3 {
+        font-size: 1.2rem;
+    }
+    .Presentation-text {
+        margin: 0;
+        padding: 20px;
+    }
+    
+
+	
+}
