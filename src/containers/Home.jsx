@@ -27,7 +27,7 @@ import '../assets/styles/App.scss';
 
 const API = 'urlAPI'
 
-class App extends Component {
+class Home extends Component {
   // eslint-disable-next-line react/state-in-constructor
   state = {
     sideDrawerOpen: false,
@@ -82,4 +82,4 @@ class App extends Component {
 
 }
 
-export default App;
+export default Home;

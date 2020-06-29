@@ -42,13 +42,12 @@ const Education = () => (
             {' '}
           </p>
           <p className='Education-description'>
-            Tengo una experiencia increible cursando en ADA, donde hemos obtenido prácticas en:
+            Mi experiencia en ADA a sido muy satisfactoria, además de conocer chicas increibles de quienes aprendes mucho y además adquieres habilidad para trabajar en equipo. He aprendido desde POO, procedural, algoritmos hasta conectar tu proyecto a una base de datos usando Spring Boot.
             <div className='Education-description_mini'>
               <p>
-                Para ver habilidades has
+                Para ver habilidades has <a href='/'> Click acá </a>
                 {' '}
               </p>
-              <a href='/'> Click acá </a>
             </div>
 
           </p>
@@ -60,7 +59,7 @@ const Education = () => (
         </figure>
         <div className='Education-title-detail'>
           <p>
-            <strong>Desarrolladora Frontend</strong>
+            <strong>Escuela de JavaScript</strong>
             {' '}
             en
             {' '}
@@ -87,13 +86,13 @@ const Education = () => (
             {' '}
           </p>
           <p className='Education-description'>
-            Siempre tuve una sed por el conocimiento, estudiar online fue mi solución, los conceptos y prácticas que manejo son:
+            Nunca creí que con una modalidad solo online y estableciendo estrictamente tus horarios de estudios ibas a llegar lejos, aprendes a ser autodidacta cuando te apasionas con algo, en mí caso fue con JavaScript. El mundo es tan amplío que siempre me da curiosidad por aprender más y más.
             <div className='Education-description_mini'>
               <p>
-                Para ver habilidades has
+                Para ver habilidades has  <a href='/'> Click acá </a>
                 {' '}
               </p>
-              <a href='/'> Click acá </a>
+             
             </div>
           </p>
         </div>
@@ -131,13 +130,12 @@ const Education = () => (
             {' '}
           </p>
           <p className='Education-description'>
-            Me prepare como profesional en el area de ingeniería y mis logros fueron:
+            Me prepare como profesional en el área de ingeniería donde la experiencia fue extremadamente satisfactoria. Todas las herramientas que adquirí me ayudo para seguir desarrollandome como profesional en el mundo IT.
             <div className='Education-description_mini'>
               <p>
-                Para ver logros has
+                Para ver logros has <a href='/'> Click acá </a>
                 {' '}
               </p>
-              <a href='/'> Click acá </a>
             </div>
           </p>
         </div>

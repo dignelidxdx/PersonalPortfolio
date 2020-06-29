@@ -16,20 +16,12 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.Education-title-detail {
-    display: block;
-    justify-content: center;
-    align-items: center;
-}
 .Education-title {
     margin: 5%;
 }
 .Education-description_mini {
     margin: 5%;
     margin-top: 10px;
-}
-.Education-description {
-    text-align: center;
 }
 .Education-description a {
     background-color: $background-color;
@@ -38,6 +30,10 @@
     padding: 5px 5px;
     border-radius: 5px;
     color: $secundary-color;
+}
+.Education-description a:hover {
+    background-color: $secundary-color;
+    color: $background-color;
 }
 
 @media only screen and (max-width: 768px) {
