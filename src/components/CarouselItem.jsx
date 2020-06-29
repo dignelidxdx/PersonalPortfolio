@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../assets/styles/components/CarouselItem.scss';
+import { connect } from 'react-redux';
 import mysql from '../assets/static/diploma-sql-mysql-1.png';
 import ingenieria from '../assets/static/diploma-ingenieria-1.png';
 import react from '../assets/static/diploma-react-ejs-1.png';
@@ -8,20 +10,29 @@ import frontend from '../assets/static/diploma-frontend-developer-1.png';
 import scrum from '../assets/static/diploma-scrum-1.png';
 import postman from '../assets/static/diploma-postman-1.png';
 
-const CarouselItem = (props) => (
+const CarouselItem = (props) => { 
+  const { title, year, hour, png } = props;
+  
+  return (
 
   <div className='Certificate-item' display='block'>
-    <img className='Certificate-item__img' src={props.imagen} alt='imagen-Certificado' />
+    <img className='Certificate-item__img' src={png} alt='imagen-Certificado' />
     <div className='Certificate-item__details'>
       <div>
         <img src='/img/icons8-me-gusta-64.png' alt='' />
         <img src='/img/icons8-me-gusta-64.png' alt='' />
       </div>
-      <p className='Certificate-item__details--title'>{props.titulo}</p>
-      <p className='Certificate-item__details--subtitle'>{props.anio} +{props.horas}</p>
+      <p className='Certificate-item__details--title'>{title}</p>
+      <p className='Certificate-item__details--subtitle'>{year} +{hour}</p>
     </div>
   </div>
+  )
+};
 
-);
+CarouselItem.propTypes = {
+  title: PropTypes.string,
+  year: PropTypes.number,
+  hour: PropTypes.number,
+}
 
 export default CarouselItem;

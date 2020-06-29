@@ -9,20 +9,24 @@
     justify-content: center;
     flex-direction: column;
     padding: 0 30px;
-    min-height: calc(100vh - 200px);
+    height: 100vh;
 }
 .login-container {
-    margin: 40px 0;
+    margin: 40px 20px;
     background-color: rgba(255,255,255, 0.1);
     border: 2px solid $purple-color;
     border-radius: 40px;
     color: black;
     padding: 60px 68px 40px;
     min-height: 500px;
-    width: 300px;
+    width: 35%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+}
+.login-container img {
+    width: 60px;
+    margin: 10px 38%;
 }
 .login-container h2 {
     margin: 0 auto;
@@ -99,4 +103,24 @@
     font-family: 'Muli', sans-serif;
     height: 50px;
     letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .login-container {
+        
+        width: 70%;
+    }
+
+	
+}
+@media only screen and (max-width: 426px) {
+    .login {
+        padding: 0 5px;
+    }
+    .login-container {
+        
+        width: 100%;
+    }
+
 }

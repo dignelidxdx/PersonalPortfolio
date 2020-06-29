@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/styles/components/Footer.scss';
 import logo from '../assets/static/user-woman.png';
 import whatsapp from '../assets/static/003-whatsapp.png';
@@ -14,11 +15,11 @@ const Footer = () => (
           <img src={logo} />
         </div>
         <ul>
-          <li><a href='/'>About me</a></li>
-          <li><a href='/'>Skills</a></li>
-          <li><a href='/'>Proyectos</a></li>
-          <li><a href='/'>Experiencia</a></li>
-          <li><a href='/'>Contáctame</a></li>
+          <li><a href='/aboutme'>About me</a></li>
+          <li><a href='/skills'>Skills</a></li>
+          <li><a href='/projects'>Proyectos</a></li>
+          <li><a href='/experience'>Experiencia</a></li>
+          <li><a href='/contact'>Contáctame</a></li>
         </ul>
       </nav>
       <div className='nav--social'>
