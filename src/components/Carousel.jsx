@@ -5,7 +5,7 @@ import '../assets/styles/components/Carousel.scss';
 
 const Carousel = (props) => (
   <div className='carousel'>
-    <div className='carousel-container'>
+    <div className='carousel__container'>
       {props.children}
     </div>
   </div>
