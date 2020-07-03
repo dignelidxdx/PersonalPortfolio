@@ -11,3 +11,12 @@ body {
 * {
     box-sizing: border-box;
 }
+
+a {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  a:hover {
+    transition: all 0.5s ease-in-out;
+  }
+

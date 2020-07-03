@@ -10,16 +10,8 @@ import GeneratePDF from '../components/GeneratePDF';
 import Workshop from '../components/Workshop';
 import Certificate from '../components/Certificate';
 import Carousel from '../components/Carousel';
+import BackToTop from '../components/BackToTop';
 import CarouselItem from '../components/CarouselItem';
-import ingenieria from '../assets/static/diploma-ingenieria-1.png';
-import react from '../assets/static/diploma-react-ejs-1.png';
-import frontend from '../assets/static/diploma-frontend-developer-1.png';
-import scrum from '../assets/static/diploma-scrum-1.png';
-import postman from '../assets/static/diploma-postman-1.png';
-import java from '../assets/static/diploma-java-avanzado-1.png';
-import comunicacion from '../assets/static/diploma-comunicacion-equipos-1.png';
-import mysql from '../assets/static/diploma-sql-mysql-1.png';
-import useInitialState from '../hooks/useInitialState';
 import '../assets/styles/App.scss';
 
 const Home = ({ certificados }) => {
@@ -43,6 +35,7 @@ const Home = ({ certificados }) => {
           )}
       </Carousel>
     </Certificate>
+    <BackToTop/>
   </div>
   )
 };

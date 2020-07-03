@@ -7,7 +7,7 @@ import '../assets/styles/components/Header.scss';
 import logo from '../assets/static/logo2.png';
 
 const Header = (props) => (
-  <div className='Header'>
+  <div className='Header shadow mb-5 rounded'>
     <div className='Header-container'>
       <div className='Header-logo'>
         <button className='Header_toggle-button' onClick={props.drawerClickHandler}>

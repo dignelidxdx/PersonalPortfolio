@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import reducer from './reducers'
 import App from './routes/App';
 
@@ -17,19 +18,55 @@ const initialState = {
             "hour": 30,
             "png": "https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/diploma-sql-mysql-1.png?raw=true"
           },
+
           {
             "id": 2,
+            "title": "JAVA SE Avanzado",
+            "year": 2020,
+            "hour": 120,
+            "png": "https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/diploma-java-avanzado-1.png?raw=true"
+          },
+          {
+            "id": 3,
             "title": "ReactJS",
             "year": 2020,
             "hour": 20,
             "png": "https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/diploma-react-ejs-1.png?raw=true"
           },
           {
-            "id": 3,
-            "title": "JAVA SE Avanzado",
+            "id": 4,
+            "title": "Frontend Developer",
             "year": 2020,
-            "hour": 120,
-            "png": "https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/diploma-java-avanzado-1.png?raw=true"
+            "hour": 50,
+            "png": "https://github.com/dignelidxdx/Portfolio/blob/master/src/assets/static/diploma-frontend-developer-1.png?raw=true"
+          },
+          {
+            "id": 5,
+            "title": "Postman",
+            "year": 2020,
+            "hour": 6,
+            "png": "https://github.com/dignelidxdx/Portfolio/blob/master/src/assets/static/diploma-postman-1.png?raw=true"
+          },
+          {
+            "id": 6,
+            "title": "Fundamento de Ing. de Software",
+            "year": 2019,
+            "hour": 16,
+            "png": "https://github.com/dignelidxdx/Portfolio/blob/master/src/assets/static/diploma-ingenieria-1.png?raw=true"
+          },
+          {
+            "id": 7,
+            "title": "SCRUM",
+            "year": 2019,
+            "hour": 16,
+            "png": "https://github.com/dignelidxdx/Portfolio/blob/master/src/assets/static/diploma-scrum-1.png?raw=true"
+          },
+          {
+            "id": 8,
+            "title": "Comunicación efectiva para equipos",
+            "year": 2019,
+            "hour": 8,
+            "png": "https://github.com/dignelidxdx/Portfolio/blob/master/src/assets/static/diploma-comunicacion-equipos-1.png?raw=true"
           },
         ],
         "trends": [

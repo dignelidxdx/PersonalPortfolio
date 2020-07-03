@@ -1,6 +1,32 @@
 @import "../Vars.scss";
 @import "../Media.scss";
 
+.background {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.background-top {
+    position: absolute;
+    width: 100vw;
+    height: 400px;
+    background: $secundary-color;
+    opacity: 0.5;
+    z-index: -1;
+    margin-top: -300px;
+}
+.background img {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 400px;
+    opacity: 0.5;
+    margin-top: -300px;
+    z-index: -2;
+ }
+
 .Presentation-ability {
     margin: 0;
     text-align: center;
@@ -10,14 +36,15 @@
     box-sizing: border-box;
     flex: 1;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
  }
 .Presentation-text {
     box-sizing: border-box;
     padding: 40px 50px;
     text-align: center;
+    margin-top: 10%;    
+    animation:fadeInDown 1.2s ease-in-out;    
 }
 .Presentation-text h3 {
     font-size: 1.4rem;
@@ -26,8 +53,6 @@ strong {
     color: $purple-color;
 }
 .Presentation-hero {
-    box-sizing: border-box;
-    background-color: #ebebeb;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,12 +64,42 @@ strong {
 }
 .Presentation_hero-img img {
     box-sizing: border-box;
-    width: 100%;
-    
+    width: 80%;
+    animation:fadeInDown 1.2s ease-in-out;    
 }
 
+@keyframes lsdGrib {  
+    0% {        
+      opacity: 0.5;   
+      transform: translate3d(0, -20%, 0);
+    }  
+    50% {
+    }
+    100% {
+      opacity: 1;      
+      transform: translate3d(0, 0, 0);
+    } 
+  }
+  @media only screen and (max-width: 1445px) {
+    
+    .background-top, .background img {
+        height: 400px;
+        margin-top: -200px;
+    }   	
+}
+  @media only screen and (max-width: 1372px) {
 
-  @media only screen and (max-width: 768px) {
+    .background-top, .background img {
+        height: 358px;
+    }   	
+}
+  @media only screen and (max-width: 1024px) {
+
+    .background-top, .background img {
+        height: 378px;
+    }   	
+}
+  @media only screen and (max-width: 769px) {
 
     .Presentation-hero {
         height: 100%;
@@ -64,7 +119,34 @@ strong {
         margin: 0;
         padding: 20px;
     }
-    
+    .Presentation_hero-img img {
+        margin: 0 10%;
+        width: 80%;
+        
+    }
 
-	
+    .background-top, .background img {
+        height: 620px;
+        margin-top: -320px;
+    }    	
+}
+@media only screen and (max-width: 427px) {
+
+    .background-top, .background img {
+        height: 470px;
+        margin-top: -240px;
+    }   	
+}
+@media only screen and (max-width: 375px) {
+
+    .background-top, .background img {
+        height: 470px;
+    }   	
+}
+@media only screen and (max-width: 320px) {
+
+    .background-top, .background img {
+        height: 540px;
+        margin-top: -280px;
+    }   	
 }

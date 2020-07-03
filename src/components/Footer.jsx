@@ -33,9 +33,9 @@ const Footer = () => (
     </div>
     <div className='Footer-design'>
       <p>
-        Digneli© Designed with ❤️ by
+      &copy; Copyright <strong>DigneliDavila</strong>. Designed with ❤️ by
         {' '}
-        <a href='https://twitter.com/DavilaDigneli'>@DavilaDigneli</a>
+        <a href='https://twitter.com/Digneli_Davila'>@Digneli_Davila</a>
       </p>
     </div>
 

@@ -2,9 +2,14 @@
 import React from 'react';
 import '../assets/styles/components/Presentation.scss';
 import profesional from '../assets/static/profesional-photo.png';
+import background from '../assets/static/background-computer.jpg';
 
 const Presentation = () => (
   <section className='Presentation-hero'>
+    <div className='background'>
+      <img src={background} alt=""/>
+      <div className='background-top'></div>
+    </div>
     <div className='Presentation-container'>
       <div className='Presentation-text'>
         <h3>
