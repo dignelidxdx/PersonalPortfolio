@@ -7,7 +7,6 @@ import Project from '../components/Project';
 import WorkExperience from '../components/WorkExperience';
 import Education from '../components/Education';
 import GeneratePDF from '../components/GeneratePDF';
-import Workshop from '../components/Workshop';
 import Certificate from '../components/Certificate';
 import Carousel from '../components/Carousel';
 import BackToTop from '../components/BackToTop';
@@ -27,7 +26,6 @@ const Home = ({ certificados }) => {
     <Project />
     <WorkExperience />
     <Education />
-    <Workshop />
     <Certificate>
       <Carousel>
         {certificados.map(item =>

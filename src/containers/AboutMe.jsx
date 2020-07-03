@@ -51,7 +51,7 @@ const AboutMe = () => (
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Toma de Decisiones</h5>
-                            <p class="card-text">Y porqué hablar de desición? Se que esta presente en el resto de nuestros dias, hay tantas buenas como malas decisiones la cual aprendemos o le sacamos provecho, pero como sabemos cuando tomamos una o como hacerlo?</p>
+                            <p class="card-text">Y porqué hablar de desición? Se que es algo rutinario y hay tantas buenas como malas decisiones de la cual aprendemos o le sacamos provecho, pero como sabemos cuando tomamos una y como hacerlo?</p>
                             <a href="#" class="btn btn-outline-primary">Leer Más</a>
                         </div>
                     </div>
@@ -78,7 +78,7 @@ const AboutMe = () => (
                         <div class="card-body">
                             <h5 class="card-title">React Redux</h5>
                             <p class="card-text">Qué tan importante son las librerías de React, de verdad nos ayudan a mantener un mejor código y mas entendible? Qué es connect, props, reducers y actions?</p>
-                            <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+                            <a href="#" class="btn btn-outline-primary">Leer Más</a>
                         </div>
                     </div>
                 </div>   
@@ -87,8 +87,8 @@ const AboutMe = () => (
                         <img class="card-img-top" src={java} alt="Card image cap"/>
                         <div class="card-body">
                             <h5 class="card-title">Mi mundo y Java</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+                            <p class="card-text">A pesar que es un lenguaje que nacio en el 1991, tiene las bases de todo lenguaje al igual que C++, con un paradigma Orientado a objetos o funcional.</p>
+                            <a href="#" class="btn btn-outline-primary">Leer Más</a>
                         </div>
                     </div>
                 </div>  
@@ -97,8 +97,8 @@ const AboutMe = () => (
                         <img class="card-img-top" src={databases} alt="Card image cap"/>
                         <div class="card-body">
                             <h5 class="card-title">Bases de Datos</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+                            <p class="card-text">Que increible es el mundo de los datos y el poder que se tiene para el análisis de la información con respecto al contexto.</p>
+                            <a href="#" class="btn btn-outline-primary">Leer Más</a>
                         </div>
                     </div>
                 </div>               
