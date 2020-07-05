@@ -1,10 +1,40 @@
 import React, { Component } from 'react';
 import '../assets/styles/components/Contact.scss';
+import Loader from '../components/Loader';
+import PageError from '../components/PageError';
 import email from '../assets/static/1234.png';
 import cell from '../assets/static/7654.png';
 
-export default class Contact extends Component {
+class Contact extends Component {
+
+    state = {
+        loading: true,
+        error: null,
+        data: undefined,
+        form: {
+            name: '',
+            email: '',
+            asunto: '',
+            mensaje: '',
+        }
+      };
+    
+      componentDidMount() {
+        console.log('3. componentDidMount()');
+        this.setState({ loading: true, error: null });
+        this.timeoutId = setTimeout(() => {
+          this.setState({ loading: false, error: null });
+        }, 1000);
+      }
+    
     render() {
+        if (this.state.loading) {
+            return <Loader />;
+        }
+      
+        if (this.state.error) {
+            return <PageError error={this.state.error} />;
+        }
         return (
             <section className="paralax-mf footer-paralax bg-image sect-mt4 route">
                 <div class="overlay-mf"></div>
@@ -98,3 +128,4 @@ export default class Contact extends Component {
         );
     }
 }
+export default Contact;

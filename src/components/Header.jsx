@@ -23,12 +23,13 @@ const Header = (props) => (
         <ol>
           <div className='header__menu'>
             <div className='header__menu--profile'>
-              <p tabIndex='0'>¿Quién soy?</p>
+              <p tabIndex='0'>Conóceme</p>
             </div>
             <ul>
               <li><a href='/myhistory'>Mi Historia</a></li>
-              <li><a href='/aboutme'>Conóceme</a></li>
+              <li><a href='/aboutme'>¿Quién soy?</a></li>
               <li><a href='/skills'>Skills</a></li>
+              <li><a href='/blog'>Blog</a></li>
             </ul>
           </div>
           <div className='header__menu'>
@@ -36,8 +37,8 @@ const Header = (props) => (
               <p tabIndex='0'>Proyectos</p>
             </div>
             <ul>
-              <li><a href='/project/mumi'>Mumi</a></li>
-              <li><a href='/project/cmdt'>CMDT</a></li>
+              <li><a href='/mumi'>Mumi</a></li>
+              <li><a href='/cmdt'>CMDT</a></li>
             </ul>
           </div>
           <div className='header__menu'>
@@ -45,19 +46,20 @@ const Header = (props) => (
               <p tabIndex='0'>Experiencia</p>
             </div>
             <ul>
-              <li><a href='/experience/2020'>2020</a></li>
-              <li><a href='/experience/2019'>2019</a></li>
-              <li><a href='/experience/2018'>2018</a></li>
-              <li><a href='/experience/2017'>2017</a></li>
+              <li><a href='/2020'>2020</a></li>
+              <li><a href='/2019'>2019</a></li>
+              <li><a href='/2018'>2018</a></li>
+              <li><a href='/2017'>2017</a></li>
             </ul>
           </div>
           <div className='header__menu'>
             <div className='header__menu--profile'>
-              <p tabIndex='0'>Contáctame</p>
+              <p tabIndex='0'>Contacto</p>
             </div>
             <ul>
               <li><Link to='/register'>Registrate</Link></li>
-              <li><Link to='/contact'>Solo Mensaje</Link></li>
+              <li><Link to='/login'>Ingresá</Link></li>
+              <li><Link to='/contact'>Contáctame</Link></li>
             </ul>
           </div>
         </ol>

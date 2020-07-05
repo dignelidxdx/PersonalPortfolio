@@ -11,6 +11,7 @@ import Certificate from '../components/Certificate';
 import Carousel from '../components/Carousel';
 import BackToTop from '../components/BackToTop';
 import CarouselItem from '../components/CarouselItem';
+import MiniBlog from '../components/MiniBlog';
 import '../assets/styles/App.scss';
 
 const Home = ({ certificados }) => {
@@ -33,6 +34,7 @@ const Home = ({ certificados }) => {
           )}
       </Carousel>
     </Certificate>
+    <MiniBlog />    
     <BackToTop/>
   </div>
   )

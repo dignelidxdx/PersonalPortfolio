@@ -11,13 +11,13 @@ const SideDrawer = (props) => {
     <nav className={drawerClasses}>
       <ul>
         <li>
-          <a href='/'>Skills</a>
+          <a href='/aboutme'>Sobre mí</a>
         </li>
         <li>
-          <a href='/'>Proyectos</a>
+          <a href='/skills'>Proyectos</a>
         </li>
         <li>
-          <a href='/'>Experiencia</a>
+          <a href='/experience'>Experiencia</a>
         </li>
         <li>
           <a href='/contact'>Contáctame</a>

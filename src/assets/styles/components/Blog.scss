@@ -1,0 +1,18 @@
+@import "../Vars.scss";
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 180px;
+    border-radius: 0px 0px 40px 40px;
+  }
+  
+  .main__title {
+    color: $purple-color;
+    font-size: 25px;
+  }
+.container {
+    padding: 30px;
+}

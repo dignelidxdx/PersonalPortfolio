@@ -10,7 +10,7 @@ import skillSix from '../assets/static/mysql.png';
 
 const Skills = () => (
   <section className='Skills'>
-    <h4 className='Skills-ability'>Skills</h4>
+    <h4 className='Skills-ability'>Habilidades</h4>
     <hr />
     <section className='Skills-container'>
       <div className='Skills-icon'>

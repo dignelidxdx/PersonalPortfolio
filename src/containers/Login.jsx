@@ -13,7 +13,7 @@ const Login = () => (
         <h2>Inicia sesión</h2>
         <form className="login-container__form" action="">
             <input className="input" type="text" placeholder="Correo" />
-            <input className="form-control input" type="password" name="password" id="password" placeholder="Contraseña" />
+            <input className="input" type="password" name="password" id="password" placeholder="Contraseña" />
 
             <label for="password">
                 <input id="mostrar_contrasena" type="checkbox" name="" id="cbox1" value="checkbox" />Mostrar Contraseña
