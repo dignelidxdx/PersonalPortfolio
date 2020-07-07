@@ -24,12 +24,16 @@ export const setFavorite = payload => ({
     payload,
   });
   
+  export const contactRequest = payload => ({
+    type: 'CONTACT_REQUEST',
+    payload,
+  });
   export const getVideoSource = payload => ({
     type: 'GET_VIDEO_SOURCE',
     payload,
   });
   
-  export const videoSearch = payload => ({
-    type: 'VIDEO_SEARCH',
+  export const blogSearch = payload => ({
+    type: 'BLOG_SEARCH',
     payload,
   });

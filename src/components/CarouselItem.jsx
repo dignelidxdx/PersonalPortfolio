@@ -2,13 +2,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../assets/styles/components/CarouselItem.scss';
-import { connect } from 'react-redux';
-import mysql from '../assets/static/diploma-sql-mysql-1.png';
-import ingenieria from '../assets/static/diploma-ingenieria-1.png';
-import react from '../assets/static/diploma-react-ejs-1.png';
-import frontend from '../assets/static/diploma-frontend-developer-1.png';
-import scrum from '../assets/static/diploma-scrum-1.png';
-import postman from '../assets/static/diploma-postman-1.png';
 
 const CarouselItem = (props) => { 
   const { title, year, hour, png } = props;

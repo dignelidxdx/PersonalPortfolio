@@ -16,27 +16,35 @@ import '../assets/styles/App.scss';
 
 const Home = ({ certificados }) => {
 
-   /* const initialState = useInitialState(API); */
+   /*
+   Use of React Hooks with useEffect and useState to call a API
+   const initialState = useInitialState(API); 
+   
+   const [ videos, setVideos ] = useState([]);
+   useEffect(() = {
+     fetch(API)
+     .then(response = response.json())
+     .then(data = setVideos(data));
+   }, []); */
 
   return /* initialState.length === 0 ? <h1>Loading...</h1> : */ (
     <div className='App'>
-
-    <Presentation />
-    <GeneratePDF />
-    <Skills />
-    <Project />
-    <WorkExperience />
-    <Education />
-    <Certificate>
-      <Carousel>
-        {certificados.map(item =>
-          <CarouselItem key={item.id} {...item} />          
-          )}
-      </Carousel>
-    </Certificate>
-    <MiniBlog />    
-    <BackToTop/>
-  </div>
+      <Presentation />
+      <GeneratePDF />
+      <Skills />
+      <Project />
+      <WorkExperience />
+      <Education />
+      <Certificate>
+        <Carousel>
+          {certificados.map(item =>
+            <CarouselItem key={item.id} {...item} />          
+            )}
+        </Carousel>
+      </Certificate>
+      <MiniBlog />    
+      <BackToTop/>
+    </div>
   )
 };
 

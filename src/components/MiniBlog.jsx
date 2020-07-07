@@ -64,11 +64,9 @@ const MiniBlog = () => (
                                     <h6 class="category">Maquetación</h6>
                                 </div>
                             </div>
-                            <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                            <h3 class="card-title"><a href="blog-single.html">Lee más sobre la maquetación</a></h3>
                             <p class="card-description">
-                                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                                a pellentesque nec,
-                                egestas non nisi.
+                                Podemos determinar la maquetación como la transformación del diseño de un producto web en un conjunto de archivos (html, css, js) capaces de ser reproducidos por los navegadores web.
               </p>
                         </div>
                         <div class="card-footer">
@@ -95,11 +93,9 @@ const MiniBlog = () => (
                                     <h6 class="category">Java</h6>
                                 </div>
                             </div>
-                            <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                            <h3 class="card-title"><a href="blog-single.html">Lee más sobre Java</a></h3>
                             <p class="card-description">
-                                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                                a pellentesque nec,
-                                egestas non nisi.
+                                Uno de mis lenguajes favoritos del backend es Java, en este articulo te voy a contar todo lo que he aprendido del lenguaje desde su sintaxis hasta sus paradigmas.
               </p>
                         </div>
                         <div class="card-footer">

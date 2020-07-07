@@ -9,9 +9,7 @@ import Layout from '../components/Layout';
 import Contact from '../components/Contact';
 import Skills from '../containers/Habilities';
 import History from '../containers/History';
-import Blog from '../components/Blog1';
-import Blog1 from '../components/Blog2';
-import Blog2 from '../components/Blog3';
+import Blog from '../containers/Blog';
 
 
 const App = () => (
@@ -20,8 +18,6 @@ const App = () => (
         <Switch>  
           <Route exact path="/" component={Home} />
           <Route exact path="/blog" component={Blog} />
-          <Route exact path="/english" component={Blog1} />
-          <Route exact path="/java" component={Blog2} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/skills" component={Skills} />
           <Route exact path="/login" component={Login} />

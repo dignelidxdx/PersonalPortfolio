@@ -32,11 +32,11 @@ const reducer = (state, action) => {
           state.original.find(item => item.id === Number(action.payload)) ||
           [],
         };
-      case 'VIDEO_SEARCH':
-        if (action.payload === '' || !action.payload) return { ...state, search: [] };
+      case 'BLOG_SEARCH':
+        if (action.payload === '' || !action.payload) return { ...state, myBlog: [] };
         return {
           ...state,
-          search: state.trends.concat(state.originals).filter(item => item.title.toLowerCase().includes(action.payload.toLowerCase())),
+          myBlog: state.blogs.concat(state.blogs).filter(item => item.title.toLowerCase().includes(action.payload.toLowerCase())),
         };
       default:
         return state;

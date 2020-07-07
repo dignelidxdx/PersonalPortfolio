@@ -10,6 +10,7 @@ import App from './routes/App';
 
 const initialState = {
         "user": {},
+        "myBlog": [],
         "certificados": [
           {
             "id": 1,
@@ -68,6 +69,55 @@ const initialState = {
             "hour": 8,
             "png": "https://github.com/dignelidxdx/Portfolio/blob/master/src/assets/static/diploma-comunicacion-equipos-1.png?raw=true"
           },
+        ],
+        "blogs": [
+          {
+            "id": 1,
+            "title": "Planificación para viajar fácil",
+            "paragraph": "La idea de hablar de la innovación es entenderla. Debe existir por nuestra visión por lo que queremos para el futuro. Es mejorar cosas ya existentes así que todos podemos innovar con muchas ganas y creatividad.",
+            
+          },
+          {
+            "id": 2,
+            "title": "¿Cómo hago la maquetación?",
+            "paragraph": "Y porqué hablar de desición? Se que es algo rutinario y hay tantas buenas como malas decisiones de la cual aprendemos o le sacamos provecho, pero como sabemos cuando tomamos una y como hacerlo?.",
+          },
+          {
+            "id": 3,
+            "title": "Java, como mi lenguaje de programación",
+            "paragraph": "Seria muy redundante hablar de ella? La tecnología esta presente en todo, pero como la podemos entender mejor y porque existe? Claro esta para mejorar nuestra calidad de vida, pero hasta que punto?.",
+          },
+          {
+            "id": 4,
+            "title": "How (not) to learn english",
+            "paragraph": "Are very intelligent people better at learning languages that average people? No, experts have shown that intelligence doesn't make a lot of differente. What makes the biggest difference is your attitude.",
+          },
+          {
+            "id": 5,
+            "title": "Porqué Python?",
+            "paragraph": "Es incrible como podemos escuchar tanto un lenguaje, tanto su versatilidad, muy limpio y fácil de entender hasta tocar los datos e inteligencia artifical.",
+          },
+          {
+            "id": 6,
+            "title": "Motivación",
+            "paragraph": "Se que muchos pensaran, todos tenemos motivación, hay veces que se nos hace dificil mantenerlo o saber identificarlo al momento, es ahí donde entra la disciplina.",
+          },
+          {
+            "id": 7,
+            "title": "Framework Vs Librerías",
+            "paragraph": "A muchos se nos hace difcil aun cuando identificar cuando es una libreria o framework, en este articulo te ayudare a identificar cual es cual, y si son dos visiones totalmente diferentes.",
+          },
+          {
+            "id": 8,
+            "title": "Los filtros que hacen al reclutar",
+            "paragraph": "Como todos sabemos todas las empresas tienen sus filtrs propios, algunos agregados de empresas externas, pero no siempre son las mismas, siempre hay sorpresas.",
+          },
+          {
+            "id": 9,
+            "title": "NodeJs vs Backend",
+            "paragraph": "Nodejs es el backend de parte de javascript pero que tan diferente es de las sintaxis de Java, C++ o PHP.",
+          }
+
         ],
         "trends": [
           {
