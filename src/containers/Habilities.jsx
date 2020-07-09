@@ -11,7 +11,7 @@ import databases from '../assets/static/basesdato.jpg';
 const Habilities = () => (
     <section className="habilities">
         <div className="habilities-container">
-            <h4 className='About-ability'>Hard Skills</h4>
+            <h4 className='About-ability'>Soft Skills</h4>
             <hr />
             <div class="row">
                 <div class="col-sm-4">
@@ -44,7 +44,7 @@ const Habilities = () => (
             </div>
         </div>
         <div className="habilities-container">
-            <h4 className='About-ability'>Soft Skills</h4>
+            <h4 className='About-ability'>Hard Skills</h4>
             <hr />
             <div className="row">
                 <div className="col-sm-4">

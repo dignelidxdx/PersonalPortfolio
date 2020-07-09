@@ -28,8 +28,8 @@ export const setFavorite = payload => ({
     type: 'CONTACT_REQUEST',
     payload,
   });
-  export const getVideoSource = payload => ({
-    type: 'GET_VIDEO_SOURCE',
+  export const getBlogToRead = payload => ({
+    type: 'GET_BLOG_TO_READ',
     payload,
   });
   

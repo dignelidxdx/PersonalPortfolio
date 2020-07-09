@@ -30,7 +30,7 @@ const Contact = (props) => {
 
 
     return (
-        <section className="paralax-mf footer-paralax bg-image sect-mt4 route">
+        <section className="Contact paralax-mf footer-paralax bg-image sect-mt4 route">
             <div class="overlay-mf"></div>
             <div className="container">
                 <div className="row">

@@ -2,7 +2,7 @@
 @import "../Media.scss";
 
 .login {
-    
+    margin-top: 5%;
     background: linear-gradient( $main-color, $secundary-color);
     display: flex;
     align-items: center;
@@ -35,6 +35,7 @@
     margin: 0 auto;
 }
 .login-container__form {
+    margin-top: 9%;
     display: flex;
     flex-direction: column;
 }

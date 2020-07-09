@@ -10,6 +10,7 @@ import App from './routes/App';
 
 const initialState = {
         "user": {},
+        "readBlog": {},
         "myBlog": [],
         "certificados": [
           {
@@ -73,47 +74,56 @@ const initialState = {
         "blogs": [
           {
             "id": 1,
+            "img": "https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/marplata.jpg?raw=true",
             "title": "Planificación para viajar fácil",
             "paragraph": "La idea de hablar de la innovación es entenderla. Debe existir por nuestra visión por lo que queremos para el futuro. Es mejorar cosas ya existentes así que todos podemos innovar con muchas ganas y creatividad.",
             
           },
           {
             "id": 2,
+            "img": "https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/background-computer.jpg?raw=true",
             "title": "¿Cómo hago la maquetación?",
             "paragraph": "Y porqué hablar de desición? Se que es algo rutinario y hay tantas buenas como malas decisiones de la cual aprendemos o le sacamos provecho, pero como sabemos cuando tomamos una y como hacerlo?.",
           },
           {
             "id": 3,
+            "img": "https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/portadas/javaBlog.png?raw=true",
             "title": "Java, como mi lenguaje de programación",
             "paragraph": "Seria muy redundante hablar de ella? La tecnología esta presente en todo, pero como la podemos entender mejor y porque existe? Claro esta para mejorar nuestra calidad de vida, pero hasta que punto?.",
           },
           {
             "id": 4,
+            "img": "https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/portadas/POOBlog.png?raw=true",
             "title": "How (not) to learn english",
             "paragraph": "Are very intelligent people better at learning languages that average people? No, experts have shown that intelligence doesn't make a lot of differente. What makes the biggest difference is your attitude.",
           },
           {
             "id": 5,
-            "title": "Porqué Python?",
+            "img": "https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/portadas/POOBlog.png?raw=true",
+            "title": "Paradigmas de programación",
             "paragraph": "Es incrible como podemos escuchar tanto un lenguaje, tanto su versatilidad, muy limpio y fácil de entender hasta tocar los datos e inteligencia artifical.",
           },
           {
             "id": 6,
+            "img": "",
             "title": "Motivación",
             "paragraph": "Se que muchos pensaran, todos tenemos motivación, hay veces que se nos hace dificil mantenerlo o saber identificarlo al momento, es ahí donde entra la disciplina.",
           },
           {
             "id": 7,
+            "img": "",
             "title": "Framework Vs Librerías",
             "paragraph": "A muchos se nos hace difcil aun cuando identificar cuando es una libreria o framework, en este articulo te ayudare a identificar cual es cual, y si son dos visiones totalmente diferentes.",
           },
           {
             "id": 8,
+            "img": "",
             "title": "Los filtros que hacen al reclutar",
             "paragraph": "Como todos sabemos todas las empresas tienen sus filtrs propios, algunos agregados de empresas externas, pero no siempre son las mismas, siempre hay sorpresas.",
           },
           {
             "id": 9,
+            "img": "",
             "title": "NodeJs vs Backend",
             "paragraph": "Nodejs es el backend de parte de javascript pero que tan diferente es de las sintaxis de Java, C++ o PHP.",
           }

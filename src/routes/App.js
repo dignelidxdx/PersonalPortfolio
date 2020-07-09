@@ -10,6 +10,7 @@ import Contact from '../components/Contact';
 import Skills from '../containers/Habilities';
 import History from '../containers/History';
 import Blog from '../containers/Blog';
+import BlogPage from '../containers/BlogPage';
 
 
 const App = () => (
@@ -18,6 +19,7 @@ const App = () => (
         <Switch>  
           <Route exact path="/" component={Home} />
           <Route exact path="/blog" component={Blog} />
+          <Route exact path="/blog/:id" component={BlogPage} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/skills" component={Skills} />
           <Route exact path="/login" component={Login} />

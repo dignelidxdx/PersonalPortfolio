@@ -1,10 +1,28 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+
 .AboutMe {
     width: 80%;
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 5%;
 }
-.About-ability {
+.About-ability {  
+    font-size: 30px;  
+    color: $secundary-color;
+    text-align: center;
+    background: $background-color;
+}
+.About-ability:hover {
+    background: $secundary-color;
+    color: $background-color;
+}
+.About-ability h4:hover {
+    color: $background-color;
+}
+.About-ability h4 {
+    font-size: 30px;
+    color: $secundary-color;
     margin-top: 80px;
     text-align: center;
     font-size: 30px;

@@ -25,11 +25,10 @@ const reducer = (state, action) => {
           ...state,
           user: action.payload,
         };
-      case 'GET_VIDEO_SOURCE':
+      case 'GET_BLOG_TO_READ':
         return {
           ...state,
-          playing: state.trends.find(item => item.id === Number(action.payload)) ||
-          state.original.find(item => item.id === Number(action.payload)) ||
+          readBlog: state.blogs.find(item => item.id === Number(action.payload)) ||
           [],
         };
       case 'BLOG_SEARCH':

@@ -1,12 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { blogSearch } from '../actions';
 import '../assets/styles/components/Blog.scss';
 import Blog1 from '../components/Blog1';
 import Blog2 from '../components/Blog2';
 
-const Blog = ({ blogs, myBlog, blogSearch }) => {
+const Blog = ({ blogs, myBlog, blogSearch, readBlog }) => {
 
   const handleOnChange = (event) => {
     blogSearch(event.target.value);
@@ -24,13 +25,14 @@ const Blog = ({ blogs, myBlog, blogSearch }) => {
 
       {myBlog.length > 0 && (
           <Blog2>
-            {myBlog.map(({ id, title, paragraph }) => {
+            {myBlog.map(({ id, title, paragraph, img }) => {
               return (
                 <Blog1
                   key={id}
                   id={id}
                   title={title}
                   paragraph={paragraph}
+                  img={img}
                 />
               );
             }) }
@@ -41,7 +43,7 @@ const Blog = ({ blogs, myBlog, blogSearch }) => {
       )}
       ;
 
-      <h4 className='Education-ability'>Blog</h4>
+      <h4 className='About-ability'>Blog</h4>
       <hr />
       
       <Blog2>

@@ -12,17 +12,20 @@ const AboutMe = () => (
     <section className="AboutMe">
         <div className="About-me_container">
             <h4 className='About-ability'>¿Quién Soy?</h4>
+
             <hr />
             <div className="About-me">
                 <div className="About-me-img">
                     <img src={imagen} alt="" />
                 </div>
                 <div className="About-data">
+                    <h2><strong>Título:</strong> Ingeniero Industrial | Desarrollador Web</h2>
                     <h2><strong>Nombre:</strong> Digneli Dávila</h2>
                     <h2><strong>Edad:</strong> 24</h2>
                     <h2><strong>Nacionalidad:</strong> Venezolana</h2>
                 </div>
             </div>
+
             <div className="About-me-text">
                 <p>Hola! Gracias por visitar mi página. Te cuento de mi... Yo nací y siempre viví en venezuela hasta los 22 años cuando me vine a vivir acá a Argentina, ame mucho el pais que por eso lo escogí. Vine con la ilusión de hacer muchas cosas y poder emprender que hasta trabaje de todo un poco apenas llegue. Durante mi infancia fui algo callada y poco reservada luego en mi estapa de la universidad me abrí más y conocí grandes amigos.</p>
                 <div className='About-me-text-img'>
@@ -32,7 +35,13 @@ const AboutMe = () => (
                 <p>Saben que es lindo? el trabajo en equipo y poder preocuparse por las cosas, pero hasta un limite, el saber separar lo urgente con lo importante y saber distribuir tu tiempo. Siento que son cosas que aprendí con el tiempo y son muy buenas practicas aplicarlo.</p>
 
             </div>
+
         </div>
+        <br />
+        <h4 className='About-ability'>Mi misión personal</h4>
+        <hr />
+        <h4 className='About-ability'>Mi visión personal</h4>
+        <hr />
         <br />
         <div className="About-themes_container">
             <h4 className='About-ability'>Temas que me apasionan</h4>
@@ -69,43 +78,43 @@ const AboutMe = () => (
         </div>
 
         <div className="About-skills-container">
-            <h4 className='About-ability'>Skills</h4>
+            <h4 className='About-ability'>Mis habilidades</h4>
             <hr />
             <div className="row">
                 <div className="col-sm-4">
                     <div class="card">
-                        <img class="card-img-top" src={redux} alt="Card image cap"/>                 
+                        <img class="card-img-top" src={redux} alt="Card image cap" />
                         <div class="card-body">
                             <h5 class="card-title">React Redux</h5>
                             <p class="card-text">Qué tan importante son las librerías de React, de verdad nos ayudan a mantener un mejor código y mas entendible? Qué es connect, props, reducers y actions?</p>
                             <a href="#" class="btn btn-outline-primary">Leer Más</a>
                         </div>
                     </div>
-                </div>   
+                </div>
                 <div className="col-sm-4">
                     <div class="card">
-                        <img class="card-img-top" src={java} alt="Card image cap"/>
+                        <img class="card-img-top" src={java} alt="Card image cap" />
                         <div class="card-body">
                             <h5 class="card-title">Mi mundo y Java</h5>
                             <p class="card-text">A pesar que es un lenguaje que nacio en el 1991, tiene las bases de todo lenguaje al igual que C++, con un paradigma Orientado a objetos o funcional.</p>
                             <a href="#" class="btn btn-outline-primary">Leer Más</a>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div className="col-sm-4">
                     <div class="card">
-                        <img class="card-img-top" src={databases} alt="Card image cap"/>
+                        <img class="card-img-top" src={databases} alt="Card image cap" />
                         <div class="card-body">
                             <h5 class="card-title">Bases de Datos</h5>
                             <p class="card-text">Que increible es el mundo de los datos y el poder que se tiene para el análisis de la información con respecto al contexto.</p>
                             <a href="#" class="btn btn-outline-primary">Leer Más</a>
                         </div>
                     </div>
-                </div>               
-            </div>        
+                </div>
+            </div>
         </div>
 
-        
+
 
     </section>
 
