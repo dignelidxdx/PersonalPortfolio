@@ -1,13 +1,13 @@
-import React, { Component, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
-const useInitialState = (API) => {    
-    const [ videos, setVideos ] = useState([]);
+const useInitialState = (API) => {
+  const [setVideos] = useState([]);
 
-    useEffect(() => {
-      fetch(API)
+  useEffect(() => {
+    fetch(API)
       .then(response = response.json())
-      .then(data => setVideos(data));
-    }, []);
+      .then((data) => setVideos(data));
+  }, []);
 };
 
 export default useInitialState;
