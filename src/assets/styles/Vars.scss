@@ -6,3 +6,19 @@ $secundary-color: #f4d3cc;
 $other-color: #727272;
 $purple-color: #490597;
 $background-color: #3c5d79;
+
+
+// Para etiquetas a de codigos con fondo gris @extend .codigo;
+
+.codigo {
+    background-color: rgb(194, 193, 193);
+    padding: 20px;
+    border: 2px solid orange;
+
+}
+
+// Con mixin usar con @include codigo-comando;
+
+@mixin codigo-comando {
+
+}

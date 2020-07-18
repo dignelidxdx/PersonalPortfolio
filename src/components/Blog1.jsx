@@ -6,7 +6,7 @@ import imagen from '../assets/static/digneli-hero.png';
 import reloj from '../assets/static/reloj.png';
 
 const Blog1 = (props) => {
-  const { id, title, categoria, paragraph, img } = props;
+  const { id, title, categoria, paragraph, img, horasLectura } = props;
   return (
     <div className='col-md-4'>
       <div className='card card-blog'>
@@ -23,10 +23,10 @@ const Blog1 = (props) => {
             </div>
           </div>
           <h3 className='card-title'>
-            <a href='blog-single.html'>
+            <Link to={`/blog/${id}`}>
               {title}
               {' '}
-            </a>
+            </Link>
           </h3>
           <p className='card-description'>
             {paragraph}
@@ -42,7 +42,9 @@ const Blog1 = (props) => {
           <div className='post-date'>
             <img width='17' height='17' src={reloj} alt='' />
             {' '}
-            10 min
+            {horasLectura}
+            {' '}
+            min
           </div>
         </div>
       </div>
@@ -54,6 +56,8 @@ const Blog1 = (props) => {
 Blog1.propTypes = {
   title: PropTypes.string,
   paragraph: PropTypes.string,
+  categoria: PropTypes.string,
+  horasLectura: PropTypes.number,
 };
 
 export default Blog1;

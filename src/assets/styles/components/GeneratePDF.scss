@@ -1,11 +1,13 @@
 @import "../Vars.scss";
 
-.GeneratePDF {
-    display: flex;
+.GeneratePDF-text {
+    display: block;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 30px;
 }
-.GeneratePDF h6 {
+.GeneratePDF {
     font-size: 18px;
 }
 .GeneratePDF a {
@@ -15,8 +17,17 @@
     background-color: $background-color;
     color: white;
     text-decoration: none;
+    :hover {
+        background-color: $secundary-color;
+        color: $background-color;
+    }
 }
 .GeneratePDF a:hover {
     background-color: $secundary-color;
     color: $background-color;
+   
 }
+.GeneratePDF-text-mini {
+    margin-top: 20px;
+}
+

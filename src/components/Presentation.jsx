@@ -7,8 +7,8 @@ import background from '../assets/static/background-computer.jpg';
 const Presentation = () => (
   <section className='Presentation-hero'>
     <div className='background'>
-      <img src={background} alt=""/>
-      <div className='background-top'></div>
+      <img src={background} alt='' />
+      <div className='background-top' />
     </div>
     <div className='Presentation-container'>
       <div className='Presentation-text'>
@@ -28,13 +28,21 @@ const Presentation = () => (
           Actualmente
           <strong> Frontend Developer </strong>
           {' '}
-          con  <br /> HTML5, CSS3, JS, React (próximamente)
+          con
+          {' '}
+          <br />
+          {' '}
+          HTML5, CSS3, JS, React (próximamente)
           <br />
           {' '}
           y
           <strong> Backend Developer</strong>
           {' '}
-          con Java, <br /> Spring Boot/Hibernate, MySQL y Postman.
+          con Java,
+          {' '}
+          <br />
+          {' '}
+          Spring Boot/Hibernate, MySQL y Postman.
 
         </h3>
       </div>

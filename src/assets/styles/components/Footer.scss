@@ -1,3 +1,6 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+
 .Footer {
     background: #f4d3cc;
     box-sizing: border-box;
@@ -28,8 +31,7 @@
 }
 .nav--Footer ul a {
     text-decoration: none;
-    color: #3f579a;
-    font-weight: 700; 
+    color: $background-color;
 }
 .nav--Footer ul a:hover {
     text-decoration: underline;
@@ -44,7 +46,7 @@
     align-items: center; }
 .nav--social li {
     list-style: none;
-    color: #3f579a;
+    color: $background-color;
     margin-right: 20px;
 }
 .nav--social a:hover {
@@ -69,7 +71,7 @@
     padding-bottom: 1px;
 }
 .Footer-design a {
-    color: #3f579a;
+    color: $background-color;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -95,12 +97,27 @@
     } 
 	
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 430px) {
     
 
     .nav--Footer {
-        display: block;;
+        display: block;
     }
 	
 }
 
+@media only screen and (max-width: 325px) {
+    
+
+    .nav--Footer ul {
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+    .nav--Footer ul a {
+        font-size: 1.1rem;
+        line-height : 40px;
+    }
+	
+	
+}

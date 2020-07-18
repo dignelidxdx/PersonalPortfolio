@@ -1,3 +1,6 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+
 .side-drawer {
     height: 100%;
     background: white;
@@ -35,10 +38,10 @@
     margin: 0.5rem 0;
 }
 .side-drawer-open a {
-    color: #3c5d79;
+    color: $background-color;
     text-decoration: none;
     font-size: 1.2rem;
 }
 .side-drawer-open a:hover, .side-drawer-open a:active {
-    color: #fa923f;
+    color: $purple-color;
 }

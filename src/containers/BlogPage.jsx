@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { getBlogToRead } from '../actions/index';
-import '../assets/styles/components/Blog.scss';
+import '../assets/styles/components/BlogPage.scss';
 
 const BlogPage = (props) => {
   const { id } = props.match.params;
@@ -19,23 +19,25 @@ const BlogPage = (props) => {
       <hr />
       <div className='container'>
         <div className='row'>
-          <div className='col-sm-4'>
-
-            <div className='card'>
-              <div className='card-body'>
-                <h5 className='card-title'>
-                  {props.readBlog.title}
-                  {' '}
-                </h5>
-                <p className='card-text'>
-                  {props.readBlog.paragraph}
-                  {' '}
-                </p>
-                <Link to='/' className='btn btn-outline-primary'>Leer Más</Link>
-              </div>
-            </div>
+          <div className='col-sm-6 BlogPage-text'>
+            <h4>
+              {props.readBlog.paragraph}
+              {' '}
+            </h4>
+          </div>
+          <div className='col-sm-6 BlogPage-img'>
+            <img src={props.readBlog.img} alt='' />
           </div>
 
+        </div>
+      </div>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-sm-12'>
+            <p>Aqui va el parrafo principal</p>
+            <p>Aqui va el parrafo secundario</p>
+            <p>Aqui va el parrafo terciario</p>
+          </div>
         </div>
       </div>
 

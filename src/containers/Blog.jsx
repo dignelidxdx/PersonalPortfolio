@@ -15,29 +15,29 @@ const Blog = ({ blogs, myBlog, blogSearch, readBlog }) => {
 
   return (
 
-    <div className="blogs">
+    <div className='blogs'>
       <div>
-        <section className="main">
-          <h2 className="main__title">¿Qué quieres leer hoy?</h2>
-          <input type="text" className="input" placeholder="Buscar..." onChange={handleOnChange} />
+        <section className='main'>
+          <h2 className='main__title'>¿Qué quieres leer hoy?</h2>
+          <input type='text' className='input' placeholder='Buscar...' onChange={handleOnChange} />
         </section>
       </div>
 
       {myBlog.length > 0 && (
-          <Blog2>
-            {myBlog.map(({ id, title, paragraph, img }) => {
-              return (
-                <Blog1
-                  key={id}
-                  id={id}
-                  title={title}
-                  paragraph={paragraph}
-                  img={img}
-                />
-              );
-            }) }
-            ;
-          </Blog2>
+        <Blog2>
+          {myBlog.map(({ id, title, paragraph, img }) => {
+            return (
+              <Blog1
+                key={id}
+                id={id}
+                title={title}
+                paragraph={paragraph}
+                img={img}
+              />
+            );
+          }) }
+          ;
+        </Blog2>
       ) || myBlog.length <= 0 && (
         <h1 className='p-5'>Busqueda no encontrada...</h1>
       )}
@@ -45,24 +45,23 @@ const Blog = ({ blogs, myBlog, blogSearch, readBlog }) => {
 
       <h4 className='About-ability'>Blog</h4>
       <hr />
-      
+
       <Blog2>
-        {blogs.map(item =>
-          <Blog1 key={item.id} {...item} />
-        )}
+        {blogs.map((item) => <Blog1 key={item.id} {...item} />)}
       </Blog2>
     </div>
   );
-}
+};
 
 const mapDispatchToProps = {
   blogSearch,
 };
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     blogs: state.blogs,
     myBlog: state.myBlog,
+    readBlog: state.readBlog,
   };
 };
 
