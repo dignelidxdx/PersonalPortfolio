@@ -1,3 +1,6 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+
 .BlogPage-img img {
     width: 400px;
 }
@@ -9,8 +12,52 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
+    background: white;
+    opacity: 0.8;
+    border-radius: 30px;
 }
+.BlogPage-first {
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+.BlogPage-first img {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+    width: 100vw;
+    opacity: 0.1;
+    margin-top: -300px;
+    z-index: -2;
+}
+.etiquetas p {
+    border: 1px solid purple;
+    padding: 10px;
+    margin: 15px;
+    background: #f4d3cc;
+}
+.etiquetas {    
+    padding: 20px;
+}
+.BlogPage-paragraph {
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 30px;
+    padding: 0 30px;
+    p {
+        margin-top: 20px;   
+    font-size: 20px;
 
+}}
+.codigo-text {
+    @extend .codigo;
+}
+.last-part-blog {
+    background-color: white;
+    opacity: 0.8;
+}
 
 @media only screen and (max-width: 770px) {
 

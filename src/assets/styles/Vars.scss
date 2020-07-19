@@ -11,9 +11,10 @@ $background-color: #3c5d79;
 // Para etiquetas a de codigos con fondo gris @extend .codigo;
 
 .codigo {
-    background-color: rgb(194, 193, 193);
+    font-weight: bold;
+    background-color: rgb(212, 211, 211);
     padding: 20px;
-    border: 2px solid orange;
+    border-left: 4px solid orange;
 
 }
 

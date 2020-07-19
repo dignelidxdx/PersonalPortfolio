@@ -2,8 +2,8 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import { connect } from 'react-redux';
-import { logoutRequest } from '../actions';
 import { Link } from 'react-router-dom';
+import { logoutRequest } from '../actions';
 import '../assets/styles/components/Header.scss';
 import logo from '../assets/static/logo2.png';
 
@@ -14,7 +14,7 @@ const Header = (props) => {
 
   const handleLogout = () => {
     props.logoutRequest({});
-  }
+  };
 
   return (
     <div className='Header shadow mb-5 rounded'>
@@ -25,7 +25,7 @@ const Header = (props) => {
             <div className='Header_toggle-button_line' />
             <div className='Header_toggle-button_line' />
           </button>
-          <Link to='/'>        
+          <Link to='/'>
             <img height='60' src={logo} alt='' />
           </Link>
         </div>
@@ -47,8 +47,8 @@ const Header = (props) => {
                 <p tabIndex='0'>Proyectos</p>
               </div>
               <ul>
-                <li><a href='/mumi'>Mumi</a></li>
-                <li><a href='/cmdt'>CMDT</a></li>
+                <li><a href='/project/mumi'>Mumi</a></li>
+                <li><a href='/project/cmdt'>CMDT</a></li>
               </ul>
             </div>
             <div className='header__menu'>
@@ -56,10 +56,10 @@ const Header = (props) => {
                 <p tabIndex='0'>Experiencia</p>
               </div>
               <ul>
-                <li><a href='/2020'>2020</a></li>
-                <li><a href='/2019'>2019</a></li>
-                <li><a href='/2018'>2018</a></li>
-                <li><a href='/2017'>2017</a></li>
+                <li><a href='/experience/2020'>2020</a></li>
+                <li><a href='/experience/2019'>2019</a></li>
+                <li><a href='/experience/2018'>2018</a></li>
+                <li><a href='/experience/2017'>2017</a></li>
               </ul>
             </div>
             <div className='header__menu'>
@@ -68,19 +68,14 @@ const Header = (props) => {
               </div>
               <ul>
                 {hasUser ?
-                  <li><a href="/">{user.name}</a></li>
-                  : null
-                }
+                  <li><a href='/'>{user.name}</a></li> :
+                  null}
                 {hasUser ?
-                  <li><a onClick={handleLogout} href='/'>Cerrar Sesión</a></li>
-                  :
-                  <li><Link to='/login'>Ingresá</Link></li>
-                }
+                  <li><a onClick={handleLogout} href='/'>Cerrar Sesión</a></li> :
+                  <li><Link to='/login'>Ingresá</Link></li>}
                 {hasUser ?
-                  null
-                  :
-                  <li><Link to='/register'>Registrate</Link></li>
-                }
+                  null :
+                  <li><Link to='/register'>Registrate</Link></li>}
                 <li><Link to='/contact'>Contáctame</Link></li>
               </ul>
             </div>
@@ -90,16 +85,16 @@ const Header = (props) => {
     </div>
 
   );
-}
+};
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    user: state.user
+    user: state.user,
   };
 };
 
 const mapDispatchToProps = {
-  logoutRequest,  
-}
+  logoutRequest,
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);

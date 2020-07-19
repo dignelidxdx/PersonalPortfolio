@@ -34,7 +34,7 @@ const WorkExperience = () => (
           Preparación de cronómetros de insumos para anticipar stock.
           Capacidad de transmitir información y realizar training por la instalación de la Organización...
         </p>
-        <a href='/blog.html' className='blogs-button'> Leer Más </a>
+        <a href='/experience/vivamos' className='blogs-button'> Leer Más </a>
       </article>
       <article className='project'>
         <img src='' alt='' />
@@ -59,11 +59,11 @@ const WorkExperience = () => (
           {' '}
         </p>
         <p>
-          Tuve varias funciones entre ellas fue completar con data para la planificacion de proyectos
-          <br />
-          desarrollo de una base de datos en excel para obtener datos de...
+          Encarga de acompañar al cliente atendiendo sus necesidades y generar empatía.
+
+          Manejo de caja y cierre. Organización e inventario. Coordinación con proveedores y hacer check in...
         </p>
-        <a href='/blog.html' className='blogs-button'> Leer Más </a>
+        <a href='/experience/suplemento' className='blogs-button'> Leer Más </a>
       </article>
       <article className='project'>
         <img src='' alt='' />
@@ -92,7 +92,7 @@ const WorkExperience = () => (
           <br />
           desarrollo de una base de datos en excel para obtener datos de...
         </p>
-        <a href='/blog.html' className='blogs-button'> Leer Más </a>
+        <a href='/experience/pdvsa' className='blogs-button'> Leer Más </a>
       </article>
     </div>
 
