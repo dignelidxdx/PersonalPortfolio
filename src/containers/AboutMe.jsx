@@ -22,17 +22,17 @@ const AboutMe = () => (
           <h2>
             <strong>Título:</strong>
             {' '}
-            Ingeniero Industrial | Desarrolladora Web
+            Industrial Engineer | Software Engineer
           </h2>
           <h2>
-            <strong>Nombre:</strong>
+            <strong>My name:</strong>
             {' '}
             Digneli Dávila
           </h2>
           <h2>
-            <strong>Edad:</strong>
+            <strong>age:</strong>
             {' '}
-            24
+            25
           </h2>
         </div>
       </div>

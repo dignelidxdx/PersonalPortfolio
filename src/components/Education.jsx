@@ -29,7 +29,7 @@ const Education = () => (
               12/02/2020
               {' '}
               <strong> - Hasta: </strong>
-              Actualidad
+              13/11/2020
               {' '}
             </small>
             <br />
@@ -42,7 +42,7 @@ const Education = () => (
             {' '}
           </p>
           <p className='Education-description'>
-            Mi experiencia en ADA a sido muy satisfactoria, además de conocer chicas increibles de quienes aprendes mucho y además adquieres habilidad para trabajar en equipo. He aprendido desde POO, procedural, algoritmos hasta conectar tu proyecto a una base de datos usando Spring Boot.
+            Mi experiencia en ADA a sido muy satisfactoria, además de conocer compañeras increibles de quienes aprendes mucho y además adquieres habilidad para trabajar en equipo. He aprendido desde POO, procedural, algoritmos hasta conectar tu proyecto a una base de datos usando Spring Boot.
             <div className='Education-description_mini'>
               <p>
                 Para ver habilidades has <a href='/'> Click acá </a>
@@ -59,7 +59,7 @@ const Education = () => (
         </figure>
         <div className='Education-title-detail'>
           <p>
-            <strong>Escuela de JavaScript</strong>
+            <strong>Escuela de Programación y Desarrollo de Software</strong>
             {' '}
             en
             {' '}
@@ -86,7 +86,7 @@ const Education = () => (
             {' '}
           </p>
           <p className='Education-description'>
-            Nunca creí que con una modalidad solo online y estableciendo estrictamente tus horarios de estudios ibas a llegar lejos, aprendes a ser autodidacta cuando te apasionas con algo, en mí caso fue con JavaScript. El mundo es tan amplío que siempre me da curiosidad por aprender más y más.
+            Nunca creí que con una modalidad solo online y estableciendo estrictamente tus horarios de estudios ibas a llegar lejos, aprendes a ser autodidacta cuando te apasionas con algo, en mí caso fue con JavaScript. El mundo es tan amplío que siempre me da curiosidad por aprender más y más. Actualmente aprendiendo otros lenguajes backend, AWS, almacenamiento en la nube.
             <div className='Education-description_mini'>
               <p>
                 Para ver habilidades has  <a href='/'> Click acá </a>

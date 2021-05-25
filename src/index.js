@@ -69,6 +69,33 @@ const initialState = {
       'hour': 8,
       'png': 'https://github.com/dignelidxdx/Portfolio/blob/master/src/assets/static/diploma-comunicacion-equipos-1.png?raw=true',
     },
+    {
+      'id': 9,
+      'title': 'Comunicación efectiva para equipos',
+      'year': 2019,
+      'hour': 8,
+      'png': 'https://github.com/dignelidxdx/Portfolio/blob/master/src/assets/static/diploma-comunicacion-equipos-1.png?raw=true',
+    },
+    {
+      'id': 10,
+      'title': 'Comunicación efectiva para equipos',
+      'year': 2019,
+      'hour': 8,
+      'png': 'https://github.com/dignelidxdx/Portfolio/blob/master/src/assets/static/diploma-comunicacion-equipos-1.png?raw=true',
+    },
+    {
+      'id': 11,
+      'title': 'Comunicación efectiva para equipos',
+      'year': 2019,
+      'hour': 8,
+      'png': 'https://github.com/dignelidxdx/Portfolio/blob/master/src/assets/static/diploma-comunicacion-equipos-1.png?raw=true',
+    },{
+      'id': 12,
+      'title': 'Comunicación efectiva para equipos',
+      'year': 2019,
+      'hour': 8,
+      'png': 'https://github.com/dignelidxdx/Portfolio/blob/master/src/assets/static/diploma-comunicacion-equipos-1.png?raw=true',
+    },
   ],
   'blogs': [
     {

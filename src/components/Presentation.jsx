@@ -26,24 +26,31 @@ const Presentation = () => (
           <br />
           {' '}
           Actualmente
+          <strong> Backend Developer </strong>
+          {' '}
+          con
+          {' '}
+          <br />
+          {' '}
+          Java, Microservices, Spring Boot/Hibernate,
+          {' '}
+          <br />
+          {' '}
+          APIs, Unit testing, Sql, NoSql, Architecture Patterns
+          {' '}
+          <br />
+          {' '}
+          y
           <strong> Frontend Developer </strong>
           {' '}
           con
           {' '}
           <br />
           {' '}
-          HTML5, CSS3, JS, React (próximamente)
-          <br />
-          {' '}
-          y
-          <strong> Backend Developer</strong>
-          {' '}
-          con Java,
+          HTML5, CSS3, JS, ReactJS, Hooks
           {' '}
           <br />
           {' '}
-          Spring Boot/Hibernate, MySQL y Postman.
-
         </h3>
       </div>
       <div className='Presentation_hero-img'>

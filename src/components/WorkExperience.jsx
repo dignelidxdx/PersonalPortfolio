@@ -10,6 +10,33 @@ const WorkExperience = () => (
       <article className='project'>
         <img src='' alt='' />
         <p>
+          <strong>Software Engineer</strong>
+          {' '}
+          en
+          {' '}
+          <strong>GlobalLogic</strong>
+          {' '}
+        </p>
+        <p className='project-date'>
+          <small>
+            <strong>Fecha: </strong>
+            {' '}
+            21/09/2021
+            {' '}
+            <strong> - Hasta: </strong>
+            Actualidad
+            {' '}
+          </small>
+          {' '}
+        </p>
+        <p>
+          Desarrolladora Java de Servicios APIs REST, con distintas integraciones, microservicios, unit test, colas de mensajería, seguridad con OAuth2 y JWT, SQL, documentación con Swagger, Postman...
+        </p>
+        <a href='/experience/suplemento' className='blogs-button'> Leer Más </a>
+      </article>
+      <article className='project'>
+        <img src='' alt='' />
+        <p>
           <strong>Analista de la calidad</strong>
           {' '}
           en
@@ -35,35 +62,6 @@ const WorkExperience = () => (
           Capacidad de transmitir información y realizar training por la instalación de la Organización...
         </p>
         <a href='/experience/vivamos' className='blogs-button'> Leer Más </a>
-      </article>
-      <article className='project'>
-        <img src='' alt='' />
-        <p>
-          <strong>Customer Tracking</strong>
-          {' '}
-          en
-          {' '}
-          <strong>Suplemento - Marroquinería</strong>
-          {' '}
-        </p>
-        <p className='project-date'>
-          <small>
-            <strong>Fecha: </strong>
-            {' '}
-            18/04/2018
-            {' '}
-            <strong> - Hasta: </strong>
-            20/07/2018
-            {' '}
-          </small>
-          {' '}
-        </p>
-        <p>
-          Encarga de acompañar al cliente atendiendo sus necesidades y generar empatía.
-
-          Manejo de caja y cierre. Organización e inventario. Coordinación con proveedores y hacer check in...
-        </p>
-        <a href='/experience/suplemento' className='blogs-button'> Leer Más </a>
       </article>
       <article className='project'>
         <img src='' alt='' />
