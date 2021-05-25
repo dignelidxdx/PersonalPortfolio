@@ -89,12 +89,20 @@ const initialState = {
       'year': 2020,
       'hour': 15,
       'png': 'https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/diploma-postgresql.png?raw=true',
-    },{
+    },
+    {
       'id': 12,
       'title': 'Python',
       'year': 2021,
       'hour': 16,
       'png': 'https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/diploma-python.png?raw=true',
+    },
+    {
+      'id': 13,
+      'title': 'Secure Coding',
+      'year': 2021,
+      'hour': 16,
+      'png': 'https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/Secure-Coding-OWASPTOP10.png?raw=true',
     },
   ],
   'blogs': [

@@ -25,12 +25,12 @@ const AboutMe = () => (
             Industrial Engineer | Software Engineer
           </h2>
           <h2>
-            <strong>My name:</strong>
+            <strong>Mi nombre:</strong>
             {' '}
             Digneli Dávila
           </h2>
           <h2>
-            <strong>age:</strong>
+            <strong>Edad:</strong>
             {' '}
             25
           </h2>
@@ -51,9 +51,14 @@ const AboutMe = () => (
     <br />
     <h4 className='About-ability'>Mi misión personal</h4>
     <hr />
+    <div className='About-me-text-1'>
+      <p>Dentro de mi misión esta enseñar mis actuales conocimientos y habilidades para que a otras personas les sea de utilidad en el día a día.</p>
+    </div>
     <h4 className='About-ability'>Mi visión personal</h4>
     <hr />
-    <br />
+    <div className='About-me-text-1'>
+      <p>Dentro de mi visión esta aprender nuevas tecnologías para que a la hora de tomar decisiones sea mas llevadero y con una confianza mayor, ya sea dentro de habilidades blandas o al momento de hablar de infraestructura.</p>
+    </div>
     <div className='About-themes_container'>
       <h4 className='About-ability'>Temas que me apasionan</h4>
       <hr />
