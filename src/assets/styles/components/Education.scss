@@ -13,12 +13,13 @@
 .Education-container {
     margin: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .Education-title {
     margin: 5%;
 }
+
 .Education-description_mini {
     margin: 5%;
     margin-top: 10px;
@@ -36,12 +37,12 @@
     color: $background-color;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     .Education-container {
         margin: 10px;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
     .Education-title {
         margin: 0%;

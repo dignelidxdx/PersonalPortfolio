@@ -9,13 +9,60 @@ const Education = () => (
     <h4 className='Education-ability'>Educación</h4>
     <hr />
     <div className='Education-container'>
+    <article className='Education-title'>
+        <figure className='Education-title-imageContainer'>
+          <img className='Education-title-image' src='' />
+        </figure>
+        <div className='Education-title-detail'>
+          <p>
+            <strong>Desarrolladora en GO</strong>
+            {' '}
+            en
+            {' '}
+            <strong>Digital House - Mercado Libre</strong>
+            {' '}
+          </p>
+          <p className='Education-data'>
+            <small>
+              <strong>Fecha: </strong>
+              {' '}
+              15/11/2021
+              {' '}
+              <strong> | Hasta: </strong>
+              21/01/2022
+              {' '}
+              <strong> | Duración: </strong>
+              360 HS
+              {' '}
+            </small>
+            <br />
+            <small>
+              <strong>Modalidad: </strong>
+              {' '}
+              Online
+              {' '}
+            </small>
+            {' '}
+          </p>
+          <p className='Education-description'>
+            Mi experiencia en ADA a sido muy satisfactoria, además de conocer compañeras increibles de quienes aprendes mucho y además adquieres habilidad para trabajar en equipo. He aprendido desde POO, procedural, algoritmos hasta conectar tu proyecto a una base de datos usando Spring Boot.
+            <div className='Education-description_mini'>
+              <p>
+                Para ver logros has <a href='/'> Click acá </a>
+                {' '}
+              </p>
+            </div>
+
+          </p>
+        </div>
+      </article>
       <article className='Education-title'>
         <figure className='Education-title-imageContainer'>
           <img className='Education-title-image' src='' />
         </figure>
         <div className='Education-title-detail'>
           <p>
-            <strong>Desarrolladora JAVA</strong>
+            <strong>Desarrolladora en JAVA</strong>
             {' '}
             en
             {' '}
@@ -28,7 +75,7 @@ const Education = () => (
               {' '}
               12/02/2020
               {' '}
-              <strong> - Hasta: </strong>
+              <strong> | Hasta: </strong>
               13/11/2020
               {' '}
             </small>
@@ -45,7 +92,7 @@ const Education = () => (
             Mi experiencia en ADA a sido muy satisfactoria, además de conocer compañeras increibles de quienes aprendes mucho y además adquieres habilidad para trabajar en equipo. He aprendido desde POO, procedural, algoritmos hasta conectar tu proyecto a una base de datos usando Spring Boot.
             <div className='Education-description_mini'>
               <p>
-                Para ver habilidades has <a href='/'> Click acá </a>
+                Para ver logros has <a href='/'> Click acá </a>
                 {' '}
               </p>
             </div>
@@ -72,7 +119,7 @@ const Education = () => (
               {' '}
               20/06/2019
               {' '}
-              <strong> - Hasta: </strong>
+              <strong> | Hasta: </strong>
               Actualidad
               {' '}
             </small>
@@ -89,7 +136,7 @@ const Education = () => (
             Nunca creí que con una modalidad solo online y estableciendo estrictamente tus horarios de estudios ibas a llegar lejos, aprendes a ser autodidacta cuando te apasionas con algo, en mí caso fue con JavaScript. El mundo es tan amplío que siempre me da curiosidad por aprender más y más. Actualmente aprendiendo otros lenguajes backend, AWS, almacenamiento en la nube.
             <div className='Education-description_mini'>
               <p>
-                Para ver habilidades has  <a href='/'> Click acá </a>
+                Para ver logros has  <a href='/'> Click acá </a>
                 {' '}
               </p>
              
@@ -116,7 +163,7 @@ const Education = () => (
               {' '}
               24/10/2012
               {' '}
-              <strong> - Hasta: </strong>
+              <strong> | Hasta: </strong>
               31/11/2017
               {' '}
             </small>

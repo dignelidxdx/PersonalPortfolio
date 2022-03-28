@@ -32,7 +32,7 @@ const Presentation = () => (
           {' '}
           <br />
           {' '}
-          Java, Microservices, Spring Boot/Hibernate,
+          Go, Java, Microservices,
           {' '}
           <br />
           {' '}
