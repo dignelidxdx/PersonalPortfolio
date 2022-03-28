@@ -14,18 +14,17 @@ const initialState = {
   'certificados': [
     {
       'id': 1,
-      'title': 'MySQL y SQL',
-      'year': 2020,
-      'hour': 30,
-      'png': 'https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/diploma-sql-mysql-1.png?raw=true',
-    },
-
-    {
-      'id': 2,
-      'title': 'JAVA SE Avanzado',
+      'title': 'Go Developer',
       'year': 2020,
       'hour': 120,
-      'png': 'https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/diploma-java-avanzado-1.png?raw=true',
+      'png': 'https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/go-certificate.png?raw=true',
+    },
+    {
+      'id': 2,
+      'title': 'Secure Coding',
+      'year': 2021,
+      'hour': 16,
+      'png': 'https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/Secure-Coding-OWASPTOP10.png?raw=true',
     },
     {
       'id': 3,
@@ -97,12 +96,28 @@ const initialState = {
       'hour': 16,
       'png': 'https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/diploma-python.png?raw=true',
     },
+    
     {
       'id': 13,
-      'title': 'Secure Coding',
-      'year': 2021,
-      'hour': 16,
-      'png': 'https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/Secure-Coding-OWASPTOP10.png?raw=true',
+      'title': 'MySQL y SQL',
+      'year': 2020,
+      'hour': 30,
+      'png': 'https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/diploma-sql-mysql-1.png?raw=true',
+    },
+
+    {
+      'id': 14,
+      'title': 'JAVA SE Avanzado',
+      'year': 2020,
+      'hour': 120,
+      'png': 'https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/diploma-java-avanzado-1.png?raw=true',
+    },
+    {
+      'id': 15,
+      'title': 'ReactJS',
+      'year': 2020,
+      'hour': 20,
+      'png': 'https://github.com/dignelidxdx/PersonalPortfolio/blob/master/src/assets/static/diploma-react-ejs-1.png?raw=true',
     },
   ],
   'blogs': [

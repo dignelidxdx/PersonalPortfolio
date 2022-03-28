@@ -7,6 +7,9 @@ import skillThree from '../assets/static/javascript-skill.png';
 import skillFour from '../assets/static/java.png';
 import skillFive from '../assets/static/apirest.png';
 import skillSix from '../assets/static/mysql.png';
+import skillSeven from '../assets/static/Go_Logo_Blue.png';
+import skillEight from '../assets/static/gin.png';
+import skillNine from '../assets/static/Swagger-logo.png';
 
 const Skills = () => (
   <section className='Skills'>
@@ -36,6 +39,17 @@ const Skills = () => (
       <div className='Skills-icon'>
         <img className='Skills_icon-img' src={skillSix} alt='' />
         <strong>MYSQL</strong>
+      </div>
+      <div className='Skills-icon'>
+        <img className='Skills_icon-img' src={skillSeven} alt='' />        
+      </div>
+      <div className='Skills-icon'>
+        <img className='Skills_icon-img' src={skillEight} alt='' />
+        <strong>Gin</strong>
+      </div>
+      <div className='Skills-icon'>
+        <img className='Skills_icon-img' src={skillNine} alt='' />
+        <strong>Swagger</strong>
       </div>
     </section>
   </section>

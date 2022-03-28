@@ -45,7 +45,7 @@ const Education = () => (
             {' '}
           </p>
           <p className='Education-description'>
-            Mi experiencia en ADA a sido muy satisfactoria, además de conocer compañeras increibles de quienes aprendes mucho y además adquieres habilidad para trabajar en equipo. He aprendido desde POO, procedural, algoritmos hasta conectar tu proyecto a una base de datos usando Spring Boot.
+            Fue una experiencia enriquecedora además que aprender un montón con varios profesionales tanto de DigitalHouse para profundizar el lenguaje como de parte de profesionales de Mercado Libre como fue la calidad del software, infraestructura, sistemas distribuidos, etc.
             <div className='Education-description_mini'>
               <p>
                 Para ver logros has <a href='/'> Click acá </a>

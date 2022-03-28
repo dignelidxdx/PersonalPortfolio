@@ -3,10 +3,37 @@ import React from 'react';
 import '../assets/styles/components/WorkExperience.scss';
 
 const WorkExperience = () => (
-  <section className='Workexperiente'>
+  <section className='Workexperience'>
     <h4 className='Workexperience-title'>Experiencia Laboral</h4>
     <hr />
     <div className='Profesional-container'>
+    <article className='project'>
+        <img src='' alt='' />
+        <p>
+          <strong>Software Developer</strong>
+          {' '}
+          en
+          {' '}
+          <strong>Mercado Libre</strong>
+          {' '}
+        </p>
+        <p className='project-date'>
+          <small>
+            <strong>Fecha: </strong>
+            {' '}
+            15/11/2021
+            {' '}
+            <strong> - Hasta: </strong>
+            Actualidad
+            {' '}
+          </small>
+          {' '}
+        </p>
+        <p>
+          Desarrolladora Go de Servicios APIs REST, con distintas integraciones, microservicios, unit and functional test, colas de mensajería, no SQL, SQL, seguridad, documentación con Swagger, Postman...
+        </p>
+        <a href='/experience/suplemento' className='blogs-button'> Leer Más </a>
+      </article>
       <article className='project'>
         <img src='' alt='' />
         <p>
@@ -21,10 +48,10 @@ const WorkExperience = () => (
           <small>
             <strong>Fecha: </strong>
             {' '}
-            21/09/2021
+            21/09/2020
             {' '}
             <strong> - Hasta: </strong>
-            Actualidad
+            12/11/2021
             {' '}
           </small>
           {' '}

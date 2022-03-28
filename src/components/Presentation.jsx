@@ -32,11 +32,11 @@ const Presentation = () => (
           {' '}
           <br />
           {' '}
-          Go, Java, Microservices,
+          Go, Java, Microservices, APIs, Sql, NoSql, 
           {' '}
           <br />
           {' '}
-          APIs, Unit testing, Sql, NoSql, Architecture Patterns
+         Unit/Functional Testing, Architecture Patterns
           {' '}
           <br />
           {' '}
