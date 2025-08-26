@@ -1,5 +1,4 @@
-@import "../Vars.scss";
-@import "../Media.scss";
+@use '../index' as *;
 
 .Footer {
     background: #f4d3cc;

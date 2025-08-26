@@ -1,4 +1,4 @@
-@import "../Vars.scss";
+@use '../index' as *;
 
 .GeneratePDF-text {
     display: block;

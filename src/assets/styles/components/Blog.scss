@@ -1,4 +1,4 @@
-@import "../Vars.scss";
+@use '../index' as *;
 
 .main {
     display: flex;

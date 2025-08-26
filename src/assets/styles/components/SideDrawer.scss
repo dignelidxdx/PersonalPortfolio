@@ -1,5 +1,4 @@
-@import "../Vars.scss";
-@import "../Media.scss";
+@use '../index' as *;
 
 .side-drawer {
     height: 100%;

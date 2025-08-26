@@ -28,11 +28,18 @@ module.exports = {
         },
       },
       {
-        test: /\.(s*)css$/,
+        test: /\.css$/i,
         use: [
-          { loader: MiniCssExtractPlugin.loader },
+          MiniCssExtractPlugin.loader,
+          'css-loader'
+        ],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
           'css-loader',
-          'sass-loader',
+          'sass-loader'
         ],
       },
       {

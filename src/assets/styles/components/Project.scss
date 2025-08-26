@@ -1,5 +1,4 @@
-@import "../Vars.scss";
-@import "../Media.scss";
+@use '../index' as *;
 
 .Project-ability {
     margin: 0;

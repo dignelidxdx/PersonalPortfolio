@@ -1,6 +1,4 @@
-  
-@import "../Vars.scss";
-@import "../Media.scss";
+@use '../index' as *;
 
 .Education {
     margin: 5%;
