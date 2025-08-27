@@ -37,10 +37,14 @@ const Header = (props) => {
               </div>
               <ul>
                 <li><a href='/myhistory'>Mi Historia</a></li>
-                <li><a href='/aboutme'>¿Quién soy?</a></li>
-                <li><a href='/skills'>Skills</a></li>
-                <li><a href='/blog'>Blog</a></li>
+                <li><a href='/aboutme'>Sobre mí</a></li>
+                <li><a href='/skills'>Habilidades</a></li>
               </ul>
+            </div>
+            <div className='header__menu'>
+              <div className='header__menu--profile'>
+                <p tabIndex='0'><Link to='/blog'>Blog</Link></p>
+              </div>
             </div>
             <div className='header__menu'>
               <div className='header__menu--profile'>

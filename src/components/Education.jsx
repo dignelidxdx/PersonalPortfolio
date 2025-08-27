@@ -10,9 +10,7 @@ const Education = () => (
     <hr />
     <div className='Education-container'>
     <article className='Education-title'>
-        <figure className='Education-title-imageContainer'>
-          <img className='Education-title-image' src='' />
-        </figure>
+        
         <div className='Education-title-detail'>
           <p>
             <strong>Desarrolladora en GO</strong>
@@ -44,22 +42,21 @@ const Education = () => (
             </small>
             {' '}
           </p>
-          <p className='Education-description'>
-            Fue una experiencia enriquecedora además que aprender un montón con varios profesionales tanto de DigitalHouse para profundizar el lenguaje como de parte de profesionales de Mercado Libre como fue la calidad del software, infraestructura, sistemas distribuidos, etc.
+          <div className='Education-description'>
+            <p>
+              Fue una experiencia enriquecedora además que aprender un montón con varios profesionales tanto de DigitalHouse para profundizar el lenguaje como de parte de profesionales de Mercado Libre como fue la calidad del software, infraestructura, sistemas distribuidos, etc.
+            </p>
             <div className='Education-description_mini'>
               <p>
                 Para ver logros has <a href='/'> Click acá </a>
                 {' '}
               </p>
             </div>
-
-          </p>
+          </div>
         </div>
       </article>
       <article className='Education-title'>
-        <figure className='Education-title-imageContainer'>
-          <img className='Education-title-image' src='' />
-        </figure>
+       
         <div className='Education-title-detail'>
           <p>
             <strong>Desarrolladora en JAVA</strong>
@@ -88,22 +85,21 @@ const Education = () => (
             </small>
             {' '}
           </p>
-          <p className='Education-description'>
-            Mi experiencia en ADA a sido muy satisfactoria, además de conocer compañeras increibles de quienes aprendes mucho y además adquieres habilidad para trabajar en equipo. He aprendido desde POO, procedural, algoritmos hasta conectar tu proyecto a una base de datos usando Spring Boot.
+          <div className='Education-description'>
+            <p>
+              Mi experiencia en ADA a sido muy satisfactoria, además de conocer compañeras increibles de quienes aprendes mucho y además adquieres habilidad para trabajar en equipo. He aprendido desde POO, procedural, algoritmos hasta conectar tu proyecto a una base de datos usando Spring Boot.
+            </p>
             <div className='Education-description_mini'>
               <p>
                 Para ver logros has <a href='/'> Click acá </a>
                 {' '}
               </p>
             </div>
-
-          </p>
+          </div>
         </div>
       </article>
       <article className='Education-title'>
-        <figure className='Education-title-imageContainer'>
-          <img className='Education-title-image' src='' />
-        </figure>
+        
         <div className='Education-title-detail'>
           <p>
             <strong>Escuela de Programación y Desarrollo de Software</strong>
@@ -132,22 +128,21 @@ const Education = () => (
             </small>
             {' '}
           </p>
-          <p className='Education-description'>
-            Nunca creí que con una modalidad solo online y estableciendo estrictamente tus horarios de estudios ibas a llegar lejos, aprendes a ser autodidacta cuando te apasionas con algo, en mí caso fue con JavaScript. El mundo es tan amplío que siempre me da curiosidad por aprender más y más. Actualmente aprendiendo otros lenguajes backend, AWS, almacenamiento en la nube.
+          <div className='Education-description'>
+            <p>
+              Nunca creí que con una modalidad solo online y estableciendo estrictamente tus horarios de estudios ibas a llegar lejos, aprendes a ser autodidacta cuando te apasionas con algo, en mí caso fue con JavaScript. El mundo es tan amplío que siempre me da curiosidad por aprender más y más. Actualmente aprendiendo otros lenguajes backend, AWS, almacenamiento en la nube.
+            </p>
             <div className='Education-description_mini'>
               <p>
                 Para ver logros has  <a href='/'> Click acá </a>
                 {' '}
               </p>
-             
             </div>
-          </p>
+          </div>
         </div>
       </article>
       <article className='Education-title'>
-        <figure className='Education-title-imageContainer'>
-          <img className='Education-title-image' src='' />
-        </figure>
+       
         <div className='Education-title-detail'>
           <p>
             <strong>Ingeniera Industrial</strong>
@@ -176,15 +171,17 @@ const Education = () => (
             </small>
             {' '}
           </p>
-          <p className='Education-description'>
-            Me prepare como profesional en el área de ingeniería donde la experiencia fue extremadamente satisfactoria. Todas las herramientas que adquirí me ayudo para seguir desarrollandome como profesional en el mundo IT.
+          <div className='Education-description'>
+            <p>
+              Me prepare como profesional en el área de ingeniería donde la experiencia fue extremadamente satisfactoria. Todas las herramientas que adquirí me ayudo para seguir desarrollandome como profesional en el mundo IT.
+            </p>
             <div className='Education-description_mini'>
               <p>
                 Para ver logros has <a href='/'> Click acá </a>
                 {' '}
               </p>
             </div>
-          </p>
+          </div>
         </div>
       </article>
     </div>

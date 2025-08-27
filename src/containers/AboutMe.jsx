@@ -11,7 +11,7 @@ import databases from '../assets/static/basesdato.jpg';
 const AboutMe = () => (
   <section className='AboutMe'>
     <div className='About-me_container'>
-      <h4 className='About-ability'>¿Quién Soy?</h4>
+      <h4 className='About-ability'>Sobre mí</h4>
 
       <hr />
       <div className='About-me'>
@@ -32,18 +32,29 @@ const AboutMe = () => (
           <h2>
             <strong>Edad:</strong>
             {' '}
-            25
+            30
           </h2>
         </div>
       </div>
 
       <div className='About-me-text'>
-        <p>Hola! Gracias por visitar mi página. Te cuento de mi... Yo nací y siempre viví en venezuela hasta los 22 años cuando me vine a vivir acá a Argentina, ame mucho el pais que por eso lo escogí. Vine con la ilusión de hacer muchas cosas y poder emprender que hasta trabaje de todo un poco apenas llegue. Durante mi infancia fui algo callada y poco reservada luego en mi estapa de la universidad me abrí más y conocí grandes amigos.</p>
+        <p><strong>Hola!</strong> Gracias por visitar mi página.
+          <br />
+          <br />
+          Te cuento un poco sobre mí: nací y viví en Venezuela hasta los 22 años, cuando decidí mudarme a Argentina. Me enamoré del país, y por eso lo escogí para empezar esta nueva etapa de mi vida.
+          <br />
+          <br />
+          Llegué con la ilusión de aprender, emprender y hacer muchas cosas; incluso trabajé en distintos oficios apenas llegué. Durante mi infancia fui algo callada y reservada, pero en la universidad me abrí más, conocí grandes amigos y viví experiencias que me ayudaron a crecer.
+        </p>
         <div className='About-me-text-img'>
           <img src={amigos} alt='' />
           <img src={amigos2} alt='' />
         </div>
-        <p>Saben que es lindo? el trabajo en equipo y poder preocuparse por las cosas, pero hasta un limite, el saber separar lo urgente con lo importante y saber distribuir tu tiempo. Siento que son cosas que aprendí con el tiempo y son muy buenas practicas aplicarlo.</p>
+        <p><strong>¿Saben qué es realmente valioso?</strong> El trabajo en equipo y la capacidad de ocuparse de las cosas, pero siempre hasta un límite. Saber separar lo urgente de lo importante y distribuir bien tu tiempo.
+          <br />
+          <br />
+          Siento que son aprendizajes que se adquieren con el tiempo, y ponerlos en práctica constituye una excelente práctica profesional.
+        </p>
 
       </div>
 
@@ -63,7 +74,7 @@ const AboutMe = () => (
       <h4 className='About-ability'>Temas que me apasionan</h4>
       <hr />
       <div className='row'>
-        <div className='col-sm-4'>
+        <div className='col-sm-3'>
           <div className='card'>
             <div className='card-body'>
               <h5 className='card-title'>Innovación</h5>
@@ -72,7 +83,7 @@ const AboutMe = () => (
             </div>
           </div>
         </div>
-        <div className='col-sm-4'>
+        <div className='col-sm-3'>
           <div className='card'>
             <div className='card-body'>
               <h5 className='card-title'>Toma de Decisiones</h5>
@@ -81,19 +92,28 @@ const AboutMe = () => (
             </div>
           </div>
         </div>
-        <div className='col-sm-4'>
+        <div className='col-sm-3'>
           <div className='card'>
             <div className='card-body'>
               <h5 className='card-title'>Tegnologías</h5>
-              <p className='card-text'>Seria muy redundante hablar de ella? La tecnología esta presente en todo, pero como la podemos entender mejor y porque existe? Claro esta para mejorar nuestra calidad de vida, pero hasta que punto?.</p>
+              <p className='card-text'>¿Seria muy redundante hablar de ella? La tecnología esta presente en todo, pero como la podemos entender mejor y porque existe? Claro esta para mejorar nuestra calidad de vida, pero hasta que punto?.</p>
+              <a href='#' className='btn btn-outline-primary'>Leer Más</a>
+            </div>
+          </div>
+        </div>
+        <div className='col-sm-3'>
+          <div className='card'>
+            <div className='card-body'>
+              <h5 className='card-title'>AI</h5>
+              <p className='card-text'>Si aprendo de la variabilidad de funciones avazadas, ¿podré saber sobre AI? ¿Realmente debo saber de cálculo diferencial y estadísticas descriptivas para entender la AI y lo que hay por dentro?.</p>
               <a href='#' className='btn btn-outline-primary'>Leer Más</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div className='About-skills-container'>
+    <br />
+    <div className='About-themes_container'>
       <h4 className='About-ability'>Mis habilidades</h4>
       <hr />
       <div className='row'>

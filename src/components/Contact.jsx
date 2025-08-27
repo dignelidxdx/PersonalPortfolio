@@ -5,26 +5,81 @@ import { MdEmail, MdSettingsPhone } from 'react-icons/md';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { BsEnvelopeOpen } from 'react-icons/bs';
 import { contactRequest } from '../actions';
+import { sendContactForm, validateContactForm } from '../services/contactService';
 
 const Contact = (props) => {
 
   const [form, setValues] = useState({
     name: '',
     email: '',
-    asunto: '',
-    mensaje: '',
+    subject: '',
+    message: '',
   });
 
+  const [isLoading, setIsLoading] = useState(false);
+  const [feedback, setFeedback] = useState({ type: '', message: '' });
+  const [errors, setErrors] = useState({});
+
   const handleInput = (event) => {
+    const { name, value } = event.target;
     setValues({
       ...form,
-      [event.target.name]: event.target.value,
+      [name]: value,
     });
+    
+    // Limpiar error específico cuando el usuario empiece a escribir
+    if (errors[name]) {
+      setErrors({
+        ...errors,
+        [name]: ''
+      });
+    }
   };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    props.contactRequest(form);
-    props.history.push('/');
+    setIsLoading(true);
+    setFeedback({ type: '', message: '' });
+    setErrors({});
+
+    // Validar formulario
+    const validation = validateContactForm(form);
+    
+    if (!validation.isValid) {
+      setErrors(validation.errors);
+      setIsLoading(false);
+      return;
+    }
+
+    // Enviar datos al backend usando Promises
+    sendContactForm(form)
+      .then((result) => {
+        // Mostrar mensaje de éxito
+        setFeedback({
+          type: 'success',
+          message: '✅ ¡Mensaje enviado correctamente! Te responderé pronto.'
+        });
+        
+        // Limpiar formulario
+        setValues({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
+        
+        // Opcional: mantener la action de Redux si la necesitas
+        props.contactRequest(result);
+      })
+      .catch((error) => {
+        setFeedback({
+          type: 'error',
+          message: '❌ ' + error.message
+        });
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
 
   return (
@@ -45,36 +100,82 @@ const Contact = (props) => {
                       </h5>
                     </div>
                     <div>
-                      <form action='' method='post' role='form' className='contactForm'>
-                        {/* /*   <div id="sendmessage">Tu mensaje a sido enviado. Gracias!</div> */}
-                        <div id='errormessage' />
+                      <form onSubmit={handleSubmit} className='contactForm'>
+                        {/* Mensaje de feedback */}
+                        {feedback.message && (
+                          <div className={`alert ${feedback.type === 'success' ? 'alert-success' : 'alert-danger'}`}>
+                            {feedback.message}
+                          </div>
+                        )}
+                        
                         <div className='row'>
                           <div className='col-md-12 mb-3'>
                             <div className='form-group'>
-                              <input type='text' name='name' className='form-control' id='name' placeholder='Tu Nombre' data-rule='minlen:4' data-msg='Please enter at least 4 chars' />
-                              <div className='validation' />
+                              <input 
+                                type='text' 
+                                name='name' 
+                                className={`form-control ${errors.name ? 'is-invalid' : ''}`}
+                                id='name' 
+                                placeholder='Tu Nombre' 
+                                value={form.name}
+                                onChange={handleInput}
+                                disabled={isLoading}
+                              />
+                              {errors.name && <div className='invalid-feedback'>{errors.name}</div>}
                             </div>
                           </div>
                           <div className='col-md-12 mb-3'>
                             <div className='form-group'>
-                              <input type='email' className='form-control' name='email' id='email' placeholder='Tu Email' data-rule='email' data-msg='Please enter a valid email' />
-                              <div className='validation' />
+                              <input 
+                                type='email' 
+                                className={`form-control ${errors.email ? 'is-invalid' : ''}`}
+                                name='email' 
+                                id='email' 
+                                placeholder='Tu Email' 
+                                value={form.email}
+                                onChange={handleInput}
+                                disabled={isLoading}
+                              />
+                              {errors.email && <div className='invalid-feedback'>{errors.email}</div>}
                             </div>
                           </div>
                           <div className='col-md-12 mb-3'>
                             <div className='form-group'>
-                              <input type='text' className='form-control' name='subject' id='subject' placeholder='Asunto' data-rule='minlen:4' data-msg='Please enter at least 8 chars of subject' />
-                              <div className='validation' />
+                              <input 
+                                type='text' 
+                                className={`form-control ${errors.subject ? 'is-invalid' : ''}`}
+                                name='subject' 
+                                id='subject' 
+                                placeholder='Asunto' 
+                                value={form.subject}
+                                onChange={handleInput}
+                                disabled={isLoading}
+                              />
+                              {errors.subject && <div className='invalid-feedback'>{errors.subject}</div>}
                             </div>
                           </div>
                           <div className='col-md-12 mb-3'>
                             <div className='form-group'>
-                              <textarea className='form-control' name='message' rows='5' data-rule='required' data-msg='Please write something for us' placeholder='Mensaje' />
-                              <div className='validation' />
+                              <textarea 
+                                className={`form-control ${errors.message ? 'is-invalid' : ''}`}
+                                name='message' 
+                                rows='5' 
+                                placeholder='Mensaje'
+                                value={form.message}
+                                onChange={handleInput}
+                                disabled={isLoading}
+                              />
+                              {errors.message && <div className='invalid-feedback'>{errors.message}</div>}
                             </div>
                           </div>
                           <div className='col-md-12'>
-                            <button type='submit' className='button button-a button-big button-rouded'>Enviar Mensaje</button>
+                            <button 
+                              type='submit' 
+                              className='button button-a button-big button-rouded'
+                              disabled={isLoading}
+                            >
+                              {isLoading ? '⏳ Enviando...' : 'Enviar Mensaje'}
+                            </button>
                           </div>
                         </div>
                       </form>

@@ -76,6 +76,9 @@
 @media only screen and (max-width: 1050px) {
     
 
+    .hide-on-tablet {
+        display: none;
+    }
     .nav--Footer a {
         font-size: 12px;
     }
@@ -98,7 +101,6 @@
 }
 @media only screen and (max-width: 430px) {
     
-
     .nav--Footer {
         display: block;
     }
@@ -107,7 +109,6 @@
 
 @media only screen and (max-width: 325px) {
     
-
     .nav--Footer ul {
         margin-top: 20px;
         display: block;

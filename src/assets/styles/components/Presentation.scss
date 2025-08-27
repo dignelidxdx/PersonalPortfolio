@@ -50,6 +50,22 @@
 .Presentation-text h3 {
     font-size: 1.4rem;
 }
+.Presentation-text h2 {
+    font-size: 1.3rem;
+}
+
+.Presentation-list {
+    list-style-position: inside; 
+    text-align: center;         
+    padding-left: 0;             
+    margin: 1rem auto;   
+    animation:fadeInDown 1.2s ease-in-out;         
+}
+
+.Presentation-list h2 {
+    margin-bottom: 0.5rem;      
+}
+
 strong {
     color: $purple-color;
 }

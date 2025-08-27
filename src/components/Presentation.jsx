@@ -13,45 +13,22 @@ const Presentation = () => (
     <div className='Presentation-container'>
       <div className='Presentation-text'>
         <h3>
-          Bienvenido! Soy
-          {' '}
-          <strong>Digneli Dávila</strong>
+          ¡Bienvenido! Soy <strong>Digneli Dávila</strong>
           <br />
-          {' '}
-          Estoy apasionada por la tecnología
-          {' '}
+          Apasionada por la tecnología y aprendiz constante de su infinito mundo.
           <br />
-          {' '}
-          y soy aprendiz de su infinito mundo.
+          Actualmente me desempeño como <strong>Software Engineer</strong>, enfocada en:
           <br />
-          {' '}
-          Actualmente
-          <strong> Backend Developer </strong>
-          {' '}
-          con
-          {' '}
-          <br />
-          {' '}
-          Go, Java, Microservices, APIs, Sql, NoSql, 
-          {' '}
-          <br />
-          {' '}
-         Unit/Functional Testing, Architecture Patterns
-          {' '}
-          <br />
-          {' '}
-          y
-          <strong> Frontend Developer </strong>
-          {' '}
-          con
-          {' '}
-          <br />
-          {' '}
-          HTML5, CSS3, JS, ReactJS, Hooks
-          {' '}
-          <br />
-          {' '}
         </h3>
+        <h2>
+          <strong>Arquitectura de soluciones</strong><br />
+          <strong>APIs y microservicios</strong><br />
+          <strong>Bases de datos SQL y NoSQL</strong><br />
+          <strong>Diagramas UML funcionales</strong><br />
+          <strong>Pruebas unitarias y funcionales</strong><br />
+          <strong>Atributos de calidad</strong><br />
+          <strong>Uso de prompts de IA</strong>
+        </h2>
       </div>
       <div className='Presentation_hero-img'>
         <img
@@ -60,10 +37,8 @@ const Presentation = () => (
           alt=''
         />
       </div>
-
     </div>
   </section>
-
 );
 
 export default Presentation;

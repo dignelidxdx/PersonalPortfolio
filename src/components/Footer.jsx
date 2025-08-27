@@ -16,15 +16,15 @@ const Footer = () => (
         </div>
         <ul>
           <li><a href='/aboutme'>Sobre mí</a></li>
-          <li><a href='/skills'>Habilidades</a></li>
-          <li><a href='/projects'>Proyectos</a></li>
-          <li><a href='/experience'>Experiencia</a></li>
+          <li className='hide-on-tablet'><a href='/skills'>Habilidades</a></li>
+          <li className='hide-on-tablet'><a href='/projects'>Proyectos</a></li>
+          <li className='hide-on-tablet'><a href='/experience'>Experiencia</a></li>
           <li><a href='/contact'>Contáctame</a></li>
         </ul>
       </nav>
       <div className='nav--social'>
         <ul>
-          <li>Follow Me</li>
+          <li className='hide-on-tablet'>Follow Me</li>
           <a href='api.whatsapp.com/send?phone=5491173667901'><img className='Footer-img' src={whatsapp} alt='number cellphone' /></a>
           <a href='https://www.linkedin.com/in/digneli-mariet-d%C3%A1vila-ramones-497b9865/'><img className='Footer-img' src={linkedin} alt='linkedin' /></a>
           <a href='https://github.com/dignelidxdx'><img className='Footer-img' src={github} alt='github' /></a>
@@ -38,7 +38,6 @@ const Footer = () => (
         <a href='https://twitter.com/Digneli_Davila'>@Digneli_Davila</a>
       </p>
     </div>
-
   </footer>
 );
 
